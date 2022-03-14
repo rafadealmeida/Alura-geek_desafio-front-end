@@ -24,7 +24,8 @@
 
 .botaoLogin{
     background-color:var(--corBranco);
-    border-color: var(--corAzul);
+    
+    border: 1px solid var(--corAzul);
     color: var(--corAzul);
     
     font-family: 'Raleway', sans-serif;
@@ -36,6 +37,7 @@
     letter-spacing: 0em;
     padding: 1rem 4rem;
     text-align: left;
+    text-decoration: none;
 
 
 }
