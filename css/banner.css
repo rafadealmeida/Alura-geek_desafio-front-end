@@ -2,3 +2,12 @@
     width: 100%;
     margin: 0 auto;
 }
+
+.linkConsoles{
+    background-color: var(--corAzul);
+    color: var(--corBranco);
+    padding: 1.2rem;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    
+}
