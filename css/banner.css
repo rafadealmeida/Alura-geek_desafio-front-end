@@ -6,8 +6,42 @@
 .linkConsoles{
     background-color: var(--corAzul);
     color: var(--corBranco);
-    padding: 1.2rem;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
     
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    
+    left: 10.6%;
+    line-height: 19px;
+    padding: 1.2rem 2.4rem;
+    
+    position: absolute;
+    text-decoration: none;
+    top: 45.5%;
 }
+
+.sectionBanner{
+    background-image: url(../img/Hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12%;
+}
+
+/* .bannerTitulo{
+    color:var(--corBranco);
+    font-family: 'Raleway' sans-serif;
+    font-size: 4.43rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 auto;
+
+} */
+
+/* .bannerParagrafo{
+    color: var(--corBranco);
+    
+} */
