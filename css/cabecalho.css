@@ -1,0 +1,12 @@
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 10%;
+    padding: 2% 0;
+}
+
+.barraDePesquisa{
+    
+}
