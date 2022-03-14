@@ -2,8 +2,14 @@
     --corBranco: #ffffff;
     --corAzul:#2A7AE4;
     --corCinza:#EAF2FD;
+    --corBackgroundPesquisa : #F5F5F5
 
 
+}
+
+.container{
+    max-width:1136px;
+    
 }
 
 

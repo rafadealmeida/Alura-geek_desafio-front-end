@@ -1,12 +1,18 @@
+@import url(tema-padrao.css);
+
 .cabecalho{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
-    margin: 0 10%;
+    width: 90%;
+    margin: 0 auto;
     padding: 2% 0;
 }
 
 .barraDePesquisa{
-    
+    padding:.3rem .6rem;
+    border-radius: 20px;
+    background-color:var(--corBackgroundPesquisa);
+    margin-right: 40%;
+    width:34%;
 }
