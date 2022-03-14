@@ -4,21 +4,20 @@
 }
 
 .verTudo,.verProduto{
-    text-decoration: none;
     color: var(--corAzul);
-    font-family: 'Raleway';
     font-weight: bold;
+    font-family: 'Raleway';
+    text-decoration: none;
 
 }
 
-.verTudo{
-    background-image: url(../img/SetaAzul-Direita.png);
-    background-repeat: no-repeat;
-    background-position:center right;
-    align-items: center;
 
-    
+.tituloSessao{
+    color: var(--corCinzaEscuro);
+    font:bold 36px 'Raleway',sans-serif ;
 }
+
+
 
 .cabecalhoProduto{
     display: flex;
@@ -28,14 +27,25 @@
 
 .gradeProdutos{
     display: flex;
-    width: 100%;
     justify-content: space-around;
+    width: 100%;
     
 }
 
-.gradeoProduto>li{
+.poduto{
+    box-sizing: border-box;
     display: flex;
     width: 15%;
-    box-sizing: border-box;
+}
+
+.nomeProduto{
+    color: var(--corCinzaEscuro);
+    font:normal 14px 'Raleway',sans-serif;
+    padding: .3rem 0;
+}
+
+.precoProduto{
+    color: var(--corCinzaEscuro);
+    font: bold 16px 'Raleway',sans-serif;
 }
 
