@@ -15,11 +15,11 @@
     background-color:var(--corBackgroundPesquisa);
     margin-right: 30%;
     width:34%;
-    background: url(../img/lupa.png) no-repeat end /cover ;
-}
-
-.barraDePesquisa{
-    background: url(../img/lupa.png) no-repeat end /cover ;
+    background: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right;
+    
 }
 
 .botaoLogin{
