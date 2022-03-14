@@ -1,0 +1,41 @@
+.produtos{
+    display: flex;
+    flex-direction: column;
+}
+
+.verTudo,.verProduto{
+    text-decoration: none;
+    color: var(--corAzul);
+    font-family: 'Raleway';
+    font-weight: bold;
+
+}
+
+.verTudo{
+    background-image: url(../img/SetaAzul-Direita.png);
+    background-repeat: no-repeat;
+    background-position:center right;
+    align-items: center;
+
+    
+}
+
+.cabecalhoProduto{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0 1rem 0;
+}
+
+.gradeProdutos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+.gradeoProduto>li{
+    display: flex;
+    width: 15%;
+    box-sizing: border-box;
+}
+
