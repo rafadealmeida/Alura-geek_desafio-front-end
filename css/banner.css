@@ -59,3 +59,17 @@
         left: 2%;
     }
 }
+
+@media screen and (max-width:480px){
+    .sectionBanner{
+        background-image: url(../img/banner-tamanho-p.png);
+        padding:25%
+    }
+
+
+    .linkConsoles{
+        top: 25%;
+        transform: scale(0.8);
+        left: 0%;
+    }
+}
