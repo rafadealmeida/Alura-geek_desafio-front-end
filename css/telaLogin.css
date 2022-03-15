@@ -1,0 +1,28 @@
+.loginUsuario{
+    display:flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 10% 0;
+    background-color: var(--corCinzaClaro);
+}
+
+.tituloLogin{
+    margin-bottom: 2rem;
+    text-align: center;
+
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight:bold;
+    color:var(--corCinzaEscuro);
+}
+
+.loginUsuario input{
+    margin: 1rem 0;
+
+    padding:1rem;
+    border: 0px;
+    border-radius: 4px;
+    background-color: var(--corCinzaClaro);
+}
