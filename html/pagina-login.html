@@ -9,8 +9,92 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/tema-padrao.css">
     <link rel="stylesheet" href="../css/cabecalho.css">
+    <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/produtos.css">
+    <link rel="stylesheet" href="../css/rodape.css">
+    <link rel="stylesheet" href="../css/telaLogin.css">
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+    </style> 
+
 </head>
 <body>
+    <a href="#conreudoPrincipal" class="pularNavegacao">Pular para conteúdo Principal</a>
+
+    <header class="cabecalho container">
+            <a href="index.html">
+                <img src="../img/Logo-Home.png" alt="Logo Alura Geek">
+            </a>
+            <label for="pequisa"></label>
+            <input type="text" for="pequisa" placeholder="O que deseja encontrar?" class="barraDePesquisa">
+            <script src="../JS/login.js"></script>
+            <a href ='pagina-login.html'class="botaoLogin">Login</a>
+       
+
+        
+    </header>
+
+
+    <main>
+        <form action="" id="conteudoPrincipal" class="loginUsuario">
+            <legend class="tituloLogin">Iniciar sessão</legend>
+            <input type="email" name="email" id="emailUsuario" placeholder="Digite seu email">
+            <input type="password" name="senha" id="senhaUsuario" placeholder="Digite sua senha">
+        </form>
+
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="rodape container">
+            
+                <img src="../img/Logo-Footer.png" alt="">
+                <div class="linksRodape">
+                    <a href="#" class="contatoLink">Quem somos nós</a>
+                    <a href="#" class="contatoLink">Política de privacidade</a>
+                    <a href="#" class="contatoLink">Programa de Fidelidade</a>
+                    <a href="#" class="contatoLink">Nossa lojas</a>
+                    <a href="#" class="contatoLink">Quero ser franqueado</a>
+                    <a href="#" class="contatoLink">Anuncie aqui</a>
+                </div>
+
+                <div class="responsividadeRodape">
+                    <img src="../img/Logo-Footer.png" alt="">
+                    <div class="linksRodapeResponsividade">
+                        <a href="#" class="contatoLink">Quem somos nós</a>
+                        <a href="#" class="contatoLink">Política de privacidade</a>
+                        <a href="#" class="contatoLink">Programa de Fidelidade</a>
+                        <a href="#" class="contatoLink">Nossa lojas</a>
+                        <a href="#" class="contatoLink">Quero ser franqueado</a>
+                        <a href="#" class="contatoLink">Anuncie aqui</a>
+                    </div>
+
+                </div>
+            
+
+            <form action="" class="contato">
+
+
+                <div class="contadoNomeBox">
+                    <label for="nome" class="labelNome">Nome</label>
+                    <input type="text" name="nome" id="contatoNome">
+                </div>
+
+                <textarea name="mensagem" id="contatoMensagem" cols="60" rows="5" placeholder="Escreva sua mensagem"></textarea>
+                
+                <input type="submit" value="Enviar mensagem" id="botaoEnviar">
+            </form>
+        
+        </div>
+
+    </footer>
+    <p class="paragrafoRodape">Desenvolvido por Rafael Almeida <br>2022</p>
     
 </body>
 </html>
