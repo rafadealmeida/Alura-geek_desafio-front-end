@@ -26,3 +26,12 @@
     white-space: nowrap;
 
 }
+
+
+@media screen and (max-width:768px){
+
+    .container{
+        max-width: 768px;
+    }
+}
+ 
