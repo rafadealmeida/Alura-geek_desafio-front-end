@@ -24,5 +24,25 @@
     padding:1rem;
     border: 0px;
     border-radius: 4px;
+}
+
+.botaoEntrar{
+    background-color: var(--corAzul);
+    color: var(--corBranco);
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+main{
     background-color: var(--corCinzaClaro);
+    padding-bottom: 2%;
+    
+}
+
+@media screen and (max-width: 768px){
+    .loginUsuario{
+        width:50%;
+    }
 }
