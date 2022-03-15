@@ -36,21 +36,24 @@ footer{
 }
 
 #contatoNome{
-    padding: 1.8rem 0 .3rem .6rem;
-    margin-bottom: 1rem;
     border: 0px;
     border-radius: 4px;
+    box-sizing: content-box;
+    margin-bottom: 1rem;
+    padding: 1.8rem 0 .3rem .6rem;
     position:relative;
     width: 100%;
-    box-sizing: content-box;
     
 }
 
 #contatoMensagem{
-    width: 100%;
+    width: 102%;
     border: 0px;
     border-radius: 4px;
     padding: 0rem .3rem .3rem .6rem;
+    font-family: 'Raleway', sans-serif;
+    color:var(--corCinzaEscuro);
+    line-height: 20px;
 }
 
 #botaoEnviar{
@@ -85,4 +88,98 @@ footer{
     font-size:12px;
     font-family: 'Raleway',sans-serif;
     
+}
+
+.responsividadeRodape{
+    display: none;
+    
+}
+
+.paragrafoRodape{
+    align-items: center;
+    text-align: center;
+    margin-bottom: .6rem;
+}
+
+
+@media screen and (max-width:768px){
+    #contatoMensagem{
+        width: 50%;
+        
+    }
+    #contatoNome{
+        width: 50%;
+        margin-left: -11%;
+        
+    }
+    .labelNome{
+        top: -30%;
+    }
+    .rodape>img{
+        display: none;
+    }
+
+    .rodape{
+        justify-content: space-between;
+    }
+    .linksRodape{
+        display: none;
+    }
+    .responsividadeRodape{
+        display: flex;
+        flex-direction: column;
+        margin: 0 30% 0 5%;
+        
+    }
+
+    .contato{
+        margin-right: -31%;
+    }
+
+    .linksRodapeResponsividade{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:480px){
+    #contatoMensagem{
+        width: 50%;
+        
+    }
+    #contatoNome{
+        width: 50%;
+        margin-left: -11%;
+        
+    }
+    .labelNome{
+        top: -30%;
+    }
+    .rodape>img{
+        display: none;
+    }
+
+    .rodape{
+        justify-content: space-between;
+    }
+    .linksRodape{
+        display: none;
+    }
+    .responsividadeRodape{
+        display: flex;
+        flex-direction: column;
+        margin: 0 30% 0 5%;
+        
+    }
+
+    .contato{
+        margin-right: -31%;
+    }
+
+    .linksRodapeResponsividade{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
