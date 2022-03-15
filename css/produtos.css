@@ -1,4 +1,4 @@
-.produtos{
+.produtosSection{
     display: flex;
     flex-direction: column;
 }
@@ -49,3 +49,28 @@
     font: bold 16px 'Raleway',sans-serif;
 }
 
+
+@media screen and (max-width:768px) {
+    .container{
+       max-width: 768px;
+    }
+    
+    .gradeProduto{
+        justify-content: space-around;
+    }
+    .produtosSection{
+        width: 90%;
+       
+        margin: 0 auto;
+    }
+    
+    .produto:last-child, .produto:nth-child(5){
+        display: none;
+    }
+    .produto>img{
+        width:90%
+    }
+    
+    
+   
+}
