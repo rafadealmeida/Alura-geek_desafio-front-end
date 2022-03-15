@@ -162,7 +162,7 @@ footer{
         margin: 0.5rem 0;
     }
     .labelNome{
-        top: -30%;
+        top: -40%;
     }
     .rodape>img{
         display: none;
@@ -173,7 +173,7 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        margin: 0 0 5% 0;
+        margin: 0 0 5%;
     }
     .linksRodape{
         display: none;
