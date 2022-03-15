@@ -150,7 +150,7 @@ footer{
     }
     #contatoNome{
         width: 50%;
-        margin-left: -11%;
+        margin-left: -18%;
         
     }
     .labelNome{
@@ -169,12 +169,13 @@ footer{
     .responsividadeRodape{
         display: flex;
         flex-direction: column;
-        margin: 0 30% 0 5%;
+        margin: 0 0 0 5%;
         
     }
 
     .contato{
-        margin-right: -31%;
+        margin-left: -25%;
+        width: 50%;
     }
 
     .linksRodapeResponsividade{
