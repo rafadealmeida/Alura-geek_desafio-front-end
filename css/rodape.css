@@ -5,7 +5,7 @@ footer{
 .rodape{
     display: flex;
     justify-content: space-around;
-    margin:3% auto ;
+    margin:0 auto ;
     padding: 2rem 0 ;
 }
 
@@ -173,7 +173,7 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        margin: 5% auto;
+        margin: 0 0 5% 0;
     }
     .linksRodape{
         display: none;
