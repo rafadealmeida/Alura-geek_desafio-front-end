@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/cabecalho.css">
     <link rel="stylesheet" href="../css/banner.css">
     <link rel="stylesheet" href="../css/produtos.css">
+    <link rel="stylesheet" href="../css/rodape.css">
 
 
     <style>
@@ -204,33 +205,35 @@
 
         </section>
 
-        <footer>
-            <div class="rodape">
-                <img src="../img/Logo.png" alt="">
-                <div class="linksRodape">
-                    <a href="#" class="contatoLink">Quem somos nós</a>
-                    <a href="#" class="contatoLink">Política de privacidade</a>
-                    <a href="#" class="contatoLink">Programa de Fidelidade</a>
-                    <a href="#" class="contatoLink">Nossa lojas</a>
-                    <a href="#" class="contatoLink">Quero ser franqueado</a>
-                    <a href="#" class="contatoLink">Anuncie aqui</a>
+    </main>
+
+    <footer>
+        <div class="rodape container">
+            <img src="../img/Logo-Footer.png" alt="">
+            <div class="linksRodape">
+                <a href="#" class="contatoLink">Quem somos nós</a>
+                <a href="#" class="contatoLink">Política de privacidade</a>
+                <a href="#" class="contatoLink">Programa de Fidelidade</a>
+                <a href="#" class="contatoLink">Nossa lojas</a>
+                <a href="#" class="contatoLink">Quero ser franqueado</a>
+                <a href="#" class="contatoLink">Anuncie aqui</a>
+            </div>
+
+            <form action="" class="contato">
+
+
+                <div class="contadoNomeBox">
+                    <label for="nome" class="labelNome">Nome</label>
+                    <input type="text" name="nome" id="contatoNome">
                 </div>
 
-                <form action="">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="contatoNome" >
-
-                    <textarea name="mensagem" id="contatoMensagem" cols="30" rows="10"></textarea>
-                    
-                    <input type="submit" value="Enviar mensagem">
-                </form>
-            
-            </div>
-        </footer>
-
-      
-
-    </main>
+                <textarea name="mensagem" id="contatoMensagem" cols="60" rows="5" placeholder="Escreva sua mensagem"></textarea>
+                
+                <input type="submit" value="Enviar mensagem" id="botaoEnviar">
+            </form>
+        
+        </div>
+    </footer>
     
 </body>
 </html>
