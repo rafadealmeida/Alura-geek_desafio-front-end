@@ -50,3 +50,23 @@
 
     }
 }
+
+@media screen and (max-width:480px){
+    .cabecalho img{
+        transform: scale(.6)
+    }
+    .botaoLogin{
+        transform: scale(.7)
+    }
+
+    .barraDePesquisa{
+        display: none;
+    }
+
+    .cabecalho{
+        background-image: url(../img/lupa.png);
+        background-repeat: no-repeat;
+        background-position:right
+    }
+}
+
