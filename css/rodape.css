@@ -108,7 +108,7 @@ footer{
         
     }
     #contatoNome{
-        width: 50%;
+        width: 70%;
         margin-left: -11%;
         
     }
@@ -128,18 +128,23 @@ footer{
     .responsividadeRodape{
         display: flex;
         flex-direction: column;
-        margin: 0 30% 0 5%;
+        margin: 0 10% 0 5%;
         
     }
 
     .contato{
-        margin-right: -31%;
+        margin-right: -15%;
+        width: 100%;
     }
 
     .linksRodapeResponsividade{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    #contatoMensagem{
+        width: 70%;
     }
 }
 
@@ -174,8 +179,9 @@ footer{
     }
 
     .contato{
-        margin-left: -25%;
-        width: 50%;
+        margin-left:0%;
+        width: 80%;
+        justify-content: space-between;
     }
 
     .linksRodapeResponsividade{
