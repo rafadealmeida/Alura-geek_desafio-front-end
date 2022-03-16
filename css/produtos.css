@@ -1,11 +1,11 @@
-.produtosSection{
+.produtos{
     display: flex;
     flex-direction: column;
     margin-bottom: 3%;
     
 }
 
-.verTudo,.verProduto{
+.verTudo,.produto__link{
     color: var(--corAzul);
     font-weight: bold;
     font-family: 'Raleway';
@@ -14,20 +14,20 @@
 }
 
 
-.tituloSessao{
+.produtos__titulo{
     color: var(--corCinzaEscuro);
     font:bold 36px 'Raleway',sans-serif ;
 }
 
 
 
-.cabecalhoProduto{
+.produtos__cabecalho{
     display: flex;
     justify-content: space-between;
     margin: 3rem 0 1rem 0;
 }
 
-.gradeProdutos{
+.produtos__grade{
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -40,13 +40,13 @@
     width: 15%;
 }
 
-.nomeProduto{
+.produto__nome{
     color: var(--corCinzaEscuro);
     font:normal 14px 'Raleway',sans-serif;
     padding: .3rem 0;
 }
 
-.precoProduto{
+.produto__preco{
     color: var(--corCinzaEscuro);
     font: bold 16px 'Raleway',sans-serif;
 }
@@ -57,7 +57,7 @@
     .gradeProduto{
         justify-content: space-around;
     }
-    .produtosSection{
+    .produtos{
         width: 90%;
        
         margin: 0 auto;
@@ -78,12 +78,12 @@
 
 @media screen and (max-width:480px) {
    
-    .gradeProdutos{
+    .produtos__grade{
         justify-content: space-around;
         flex-wrap: wrap;
         
     }
-    .produtosSection{
+    .produtos{
         width: 90%;
        
         margin: 0 auto;
