@@ -1,0 +1,25 @@
+.sectionBanner{
+    display: none;
+}
+
+.gradeProdutos-todosOsProdutos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.produto{
+    margin-bottom: 2rem;
+}
+
+.adicionarProduto{
+    color:var(--corBranco);
+    background-color: var(--corAzul);
+    font-family: 'Raleway',sans-serif;
+    text-decoration: none;
+    padding: 1rem;
+}
+    
+    
+    
