@@ -1,0 +1,68 @@
+.adicionarFoto{
+    border: 1px dashed black;
+    width: 25%;
+    height: 30%;
+    padding: 2rem 0;
+    background-color: var(--corBranco);
+    text-align: center;
+    margin-right: .5rem;
+}
+
+.metodoDeAdicionarProduto{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+.botaoAdicionarFoto{
+    margin-left: .5rem;
+    padding: 1rem;
+    border-color: var(--corAzul);
+    font-family: var(--fontePadrao);
+    color: var(--corAzul);
+    font-size: 16px;
+}
+
+.tituloAdicionarFoto{
+   padding: 3rem;
+   color: var(--corCinzaEscuro);
+   font-family: var(--fontePadrao);
+   font-size: 32px;
+}
+
+.informacaoProduto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    align-content: center;
+    margin: 4rem auto;
+}
+
+
+#precoDoProduto ,#nomeDoProduto, #descricaoDoProduto{
+    padding: 1rem .5rem;
+    margin: .5rem 0;
+    border: 0px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.514);
+}
+
+
+.botaoAdicionarProduto{
+    padding: 1rem 0;
+    border-radius:0px;
+    background-color: var(--corAzul);
+    color: var(--corBranco);
+    font-size: 16px;
+    
+}
+
+@media screen and (max-width:768px){
+    .metodoDeAdicionarProduto{
+        justify-content: flex-start;
+        margin-left: 5%;
+    }
+}
+
