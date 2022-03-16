@@ -31,12 +31,20 @@
     height: 100%;
     background-color: transparent;
     border: 0px;
-    margin-top:2%
+    margin-top:2%;
+    cursor: pointer;
 }
 
-.campoBusca > button > svg:hover{
-    fill:black;
+.svgLupa>path{
+    fill: rgb(133, 133, 133);
 }
+
+
+.svgLupa>path:hover{
+    fill: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
 
 .campoBusca{
     float:left;
