@@ -20,6 +20,29 @@
     text-decoration: none;
     padding: 1rem;
 }
+
+@media screen and (max-width:768px) {
+    .produto{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .produto{
+        width: 50%;
+    }
+
+    .adicionarProduto{
+        transform: scale(.8);
+        width: 50%;
+        margin-left:-4%
+        
+    }
+
+    .cabecalhoProduto{
+        flex-direction: column;
+    }
+}
     
     
     
