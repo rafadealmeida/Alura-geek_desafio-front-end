@@ -1,9 +1,5 @@
-.banner{
-    width: 100%;
-    margin: 0 auto;
-}
 
-.linkConsoles{
+.banner__linkconsoles{
     background-color: var(--corAzul);
     color: var(--corBranco);
     
@@ -21,7 +17,7 @@
     top: 45.5%;
 }
 
-.sectionBanner{
+.banner{
     background-image: url(../img/Hero.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,13 +43,13 @@
 } */
 
 @media screen and (max-width:768px){
-    .sectionBanner{
+    .banner{
         background-image: url(../img/banner-tamanho-m.png);
         padding:25%
     }
 
 
-    .linkConsoles{
+    .banner__linkconsoles{
         top: 37.5%;
         transform: scale(0.8);
         left: 2%;
@@ -61,13 +57,13 @@
 }
 
 @media screen and (max-width:480px){
-    .sectionBanner{
+    .banner{
         background-image: url(../img/banner-tamanho-p.png);
         padding:25%
     }
 
 
-    .linkConsoles{
+    .banner__linkconsoles{
         top: 25%;
         transform: scale(0.8);
         left: 0%;
@@ -75,13 +71,13 @@
 }
 
 @media screen and (min-width:108px){
-    .linkConsoles{
+    .banner__linkconsoles{
         top: 56.5%;
         left: 9.6%;
     }
 }
 @media screen and (min-width:1440px){
-    .linkConsoles{
+    .banner__linkconsoles{
         top: 49.5%;
         left: 12.3%;
         transform: scale(1.8,1.8);
