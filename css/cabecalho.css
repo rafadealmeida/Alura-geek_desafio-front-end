@@ -11,16 +11,42 @@
 
 .barraDePesquisa{
     padding:.5rem .6rem;
-    border-radius: 20px;
-    background-color:var(--corBackgroundPesquisa);
-    margin-right: 30%;
-    width:34%;
-    background-image: url(../img/lupa.png);
+    /* border-radius: 20px; */
+    /* background-color:var(--corBackgroundPesquisa); */
+    border: 0;
+    background-color: transparent;
+    /* margin-right: 80%; */
+    width:80%;
+    /* background-image: url(../img/lupa.png);
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: right;
+    background-position: right; */
+    box-sizing:border-box;
+    float: left;
     
 }
+.campoBusca > button {
+    width:20%;
+    float: left;
+    height: 100%;
+    background-color: transparent;
+    border: 0px;
+    margin-top:2%
+}
+
+.campoBusca > button > svg:hover{
+    fill:black;
+}
+
+.campoBusca{
+    float:left;
+    border: 1px solid black;
+    border-radius:20px;
+    background-color:var(--corBackgroundPesquisa);
+    width: 40%;
+}
+
+
 
 .botaoLogin{
     background-color:var(--corBranco);
@@ -45,10 +71,13 @@
 @media screen and (max-width:768px){
     .barraDePesquisa{
         margin-right: 10%;
-        width:30%;
-        
 
     }
+    .campoBusca > button{
+        width:10%
+    }
+
+
 }
 
 @media screen and (max-width:480px){
