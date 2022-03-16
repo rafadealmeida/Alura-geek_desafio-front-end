@@ -48,7 +48,7 @@
 }
 
 
-.cabecalho__campoBusca{
+.cabecalho__campobusca{
     border: 1px solid black;
     border-radius:20px;
     background-color:var(--corBackgroundPesquisa);
