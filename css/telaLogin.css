@@ -28,11 +28,20 @@
 
 .botaoEntrar{
     background-color: var(--corAzul);
+    padding: 2rem;
     color: var(--corBranco);
     font-family: 'Raleway',sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
+    width: 100%;
+}
 
+.linkBotaoEntrar{
+    text-decoration: none;
+    color: var(--corBranco);
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 main{
