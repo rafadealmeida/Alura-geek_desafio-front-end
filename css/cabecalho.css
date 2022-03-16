@@ -1,38 +1,40 @@
 
 
 .cabecalho{
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
-    width: 90%;
     margin: 0 auto;
     padding: 2% 0;
+    width: 90%;
 }
 
-.barraDePesquisa{
-    padding:.5rem .6rem;
-    /* border-radius: 20px; */
-    /* background-color:var(--corBackgroundPesquisa); */
+.cabecalho__barradepesquisa{
     border: 0;
     background-color: transparent;
-    /* margin-right: 80%; */
+    box-sizing:border-box;
+    float: left;
+    padding:.5rem .6rem;
     width:80%;
+
+
+    /* border-radius: 20px; */
+    /* background-color:var(--corBackgroundPesquisa); */
+    /* margin-right: 80%; */
     /* background-image: url(../img/lupa.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right; */
-    box-sizing:border-box;
-    float: left;
     
 }
-.campoBusca > button {
-    width:20%;
-    float: left;
-    height: 100%;
+.cabecalho__campobusca > button {
     background-color: transparent;
     border: 0px;
-    margin-top:2%;
     cursor: pointer;
+    float: left;
+    height: 100%;
+    margin-top:2%;
+    width:20%;
 }
 
 .svgLupa>path{
@@ -46,17 +48,17 @@
 }
 
 
-.campoBusca{
-    float:left;
+.cabecalho__campoBusca{
     border: 1px solid black;
     border-radius:20px;
     background-color:var(--corBackgroundPesquisa);
+    float:left;
     width: 40%;
 }
 
 
 
-.botaoLogin{
+.cabecalho__botaoLogin{
     background-color:var(--corBranco);
     
     border: 1px solid var(--corAzul);
@@ -77,11 +79,11 @@
 }
 
 @media screen and (max-width:768px){
-    .barraDePesquisa{
+    .cabecalho__barraDePesquisa{
         margin-right: 10%;
 
     }
-    .campoBusca > button{
+    .cabecalho__campoBusca > button{
         width:10%
     }
 
@@ -92,11 +94,11 @@
     .cabecalho img{
         transform: scale(.6)
     }
-    .botaoLogin{
+    .cabecalho__botaoLogin{
         transform: scale(.7)
     }
 
-    .barraDePesquisa{
+    .cabecalho__barraDePesquisa{
         display: none;
     }
 
