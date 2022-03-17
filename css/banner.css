@@ -15,15 +15,23 @@
     font-style: normal;
     font-size: 16px;
     font-weight: 400;
+    float:inline-start; 
     
-    left: 10.6%;
+    /* left: 10.6%; */
     line-height: 19px;
-    padding: 1.2rem 2.4rem;
+    padding: 1.2rem 1rem;
     
-    position: absolute;
+    /* position: absolute; */
     text-decoration: none;
-    top: 45.5%;
+
+    margin-top: 10%;
+    
+    /* top: 45.5%; */
 }
+
+
+
+
 
 
 /* .bannerTitulo{
@@ -47,14 +55,18 @@
 @media screen and (max-width:768px){
     .banner{
         background-image: url(../img/banner-tamanho-m.png);
+        
         padding:25%
     }
 
 
     .banner__linkconsoles{
-        top: 37.5%;
-        transform: scale(0.8);
-        left: 2%;
+        /* top: 37.5%; */
+        margin-top: 28%;
+        margin-left: -41%;
+
+        transform: scale(1,0.8);
+        /* left: 2%; */
     }
 }
 
@@ -66,13 +78,14 @@
 
 
     .banner__linkconsoles{
-        top: 25%;
-        transform: scale(0.8);
-        left: 0%;
+        margin-top: 20%;
+        margin-left: -41%;
+
+        transform: scale(1,0.9);
     }
 }
 
-@media screen and (min-width:108px){
+@media screen and (min-width:1080px){
     .banner__linkconsoles{
         top: 56.5%;
         left: 9.6%;
@@ -80,8 +93,8 @@
 }
 @media screen and (min-width:1440px){
     .banner__linkconsoles{
-        top: 49.5%;
-        left: 12.3%;
-        transform: scale(1.8,1.8);
+        margin-top: 10.1%;
+        margin-left: 1.4%;
+        transform: scale(2.5,2.2);
     }
 }
