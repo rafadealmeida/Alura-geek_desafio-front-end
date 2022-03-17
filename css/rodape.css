@@ -1,7 +1,80 @@
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: -3%;
+    
+}
+#contato__botaoenviar{
+    background-color:var(--corAzul);
+    border-radius: 0px;
+    color: var(--corBranco);
+    
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    
+    line-height: 19px;
+    letter-spacing: 0em;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+    width: 35%;
+
+}
+
+.contato__link{
+    text-decoration: none;
+}
+
+#contato__mensagem{
+    width: 102%;
+    border: 0px;
+    border-radius: 4px;
+    padding: 0rem .3rem .3rem .6rem;
+    font-family: 'Raleway', sans-serif;
+    color:var(--corCinzaEscuro);
+    line-height: 20px;
+}
+
+#contato__nome{
+    border: 0px;
+    border-radius: 4px;
+    box-sizing: content-box;
+    margin-bottom: 1rem;
+    padding: 1.8rem 0 .3rem .6rem;
+    position:relative;
+    width: 100%;
+    
+}
+
+
+.contato__nome{
+    position: absolute;
+}
+
+
 footer{
     background-color: var(--corCinza);
 }
 
+.paragraforodape{
+    align-items: center;
+    text-align: center;
+    margin-bottom: .6rem;
+}
+.labelNome{
+    position: relative;
+    z-index: 2;
+    top:25%;
+    padding:.6rem;
+    color:var(--corCinzaEscuro);
+    font-size:12px;
+    font-family: 'Raleway',sans-serif;
+    
+}
 .rodape{
     display: flex;
     justify-content: space-around;
@@ -22,83 +95,9 @@ footer{
     justify-content: space-around;
     
 }
-
-.contato__link{
-    text-decoration: none;
-}
-
-.contato{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-right: -3%;
-    
-}
-
-#contato__nome{
-    border: 0px;
-    border-radius: 4px;
-    box-sizing: content-box;
-    margin-bottom: 1rem;
-    padding: 1.8rem 0 .3rem .6rem;
-    position:relative;
-    width: 100%;
-    
-}
-
-#contato__mensagem{
-    width: 102%;
-    border: 0px;
-    border-radius: 4px;
-    padding: 0rem .3rem .3rem .6rem;
-    font-family: 'Raleway', sans-serif;
-    color:var(--corCinzaEscuro);
-    line-height: 20px;
-}
-
-#contato__botaoenviar{
-    background-color:var(--corAzul);
-    border-radius: 0px;
-    color: var(--corBranco);
-    
-    font-family: 'Raleway',sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    
-    line-height: 19px;
-    letter-spacing: 0em;
-    margin-top: 1rem;
-    padding: 1rem 0;
-    text-align: center;
-    width: 35%;
-
-}
-
-.contato__nome{
-    position: absolute;
-}
-
-.labelNome{
-    position: relative;
-    z-index: 2;
-    top:25%;
-    padding:.6rem;
-    color:var(--corCinzaEscuro);
-    font-size:12px;
-    font-family: 'Raleway',sans-serif;
-    
-}
-
 .rodape__contato--responsive{
     display: none;
     
-}
-
-.paragraforodape{
-    align-items: center;
-    text-align: center;
-    margin-bottom: .6rem;
 }
 
 
