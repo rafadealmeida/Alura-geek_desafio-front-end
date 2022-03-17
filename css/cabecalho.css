@@ -79,11 +79,11 @@
 }
 
 @media screen and (max-width:768px){
-    .cabecalho__barraDePesquisa{
+    .cabecalho__barradepesquisa{
         margin-right: 10%;
 
     }
-    .cabecalho__campoBusca > button{
+    .cabecalho__campobusca > button{
         width:10%
     }
 
@@ -94,11 +94,11 @@
     .cabecalho img{
         transform: scale(.6)
     }
-    .cabecalho__botaoLogin{
+    .cabecalho__botaologin{
         transform: scale(.7)
     }
 
-    .cabecalho__barraDePesquisa{
+    .cabecalho__barradepesquisa{
         display: none;
     }
 
