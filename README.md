@@ -8,5 +8,5 @@ do mercado de trabalho
 </h1>
 
 <h4 align="center"> 
-	🚧  React Select 🚀 Em construção...  🚧
+	🚧  HTML5 e CSS3 puros 🚀 Em construção...  🚧
 </h4>
