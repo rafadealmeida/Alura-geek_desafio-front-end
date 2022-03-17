@@ -5,20 +5,11 @@
     
 }
 
-.verTudo,.produto__link{
-    color: var(--corAzul);
-    font-weight: bold;
-    font-family: 'Raleway';
-    text-decoration: none;
-
+.poduto{
+    box-sizing: border-box;
+    display: flex;
+    width: 15%;
 }
-
-
-.produtos__titulo{
-    color: var(--corCinzaEscuro);
-    font:bold 36px 'Raleway',sans-serif ;
-}
-
 
 
 .produtos__cabecalho{
@@ -34,11 +25,6 @@
     
 }
 
-.poduto{
-    box-sizing: border-box;
-    display: flex;
-    width: 15%;
-}
 
 .produto__nome{
     color: var(--corCinzaEscuro);
@@ -51,25 +37,40 @@
     font: bold 16px 'Raleway',sans-serif;
 }
 
+.produtos__titulo{
+    color: var(--corCinzaEscuro);
+    font:bold 36px 'Raleway',sans-serif ;
+}
+
+.verTudo,.produto__link{
+    color: var(--corAzul);
+    font-weight: bold;
+    font-family: 'Raleway';
+    text-decoration: none;
+}
+
+
 
 @media screen and (max-width:768px) {
    
-    .gradeProduto{
-        justify-content: space-around;
-    }
     .produtos{
         width: 90%;
        
         margin: 0 auto;
     }
     
-    .produto:last-child, .produto:nth-child(5){
-        display: none;
-    }
     .produto>img{
         width:90%
     }
+
+    .produto:last-child, .produto:nth-child(5){
+        display: none;
+    }
+   
     
+    .gradeProduto{
+        justify-content: space-around;
+    }
     
    
 }
@@ -77,26 +78,26 @@
 
 
 @media screen and (max-width:480px) {
-   
-    .produtos__grade{
-        justify-content: space-around;
-        flex-wrap: wrap;
-        
-    }
     .produtos{
         width: 90%;
        
         margin: 0 auto;
-    }
-    
-    .produto:last-child, .produto:nth-child(5){
-        display: none;
     }
     .produto{
         width:50%;
         margin-bottom:1rem;
     }
     
+    .produtos__grade{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+   
+    .produto:last-child, .produto:nth-child(5){
+        display: none;
+    }
+   
     
    
 }

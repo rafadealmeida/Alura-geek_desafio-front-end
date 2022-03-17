@@ -27,36 +27,6 @@
     background-position: right; */
     
 }
-.cabecalho__campobusca > button {
-    background-color: transparent;
-    border: 0px;
-    cursor: pointer;
-    float: left;
-    height: 100%;
-    margin-top:2%;
-    width:20%;
-}
-
-.svgLupa>path{
-    fill: rgb(133, 133, 133);
-}
-
-
-.svgLupa>path:hover{
-    fill: rgb(0, 0, 0);
-    cursor: pointer;
-}
-
-
-.cabecalho__campobusca{
-    border: 1px solid black;
-    border-radius:20px;
-    background-color:var(--corBackgroundPesquisa);
-    float:left;
-    width: 40%;
-}
-
-
 
 .cabecalho__botaologin{
     background-color:var(--corBranco);
@@ -78,6 +48,40 @@
 
 }
 
+.cabecalho__campobusca{
+    border: 1px solid black;
+    border-radius:20px;
+    background-color:var(--corBackgroundPesquisa);
+    float:left;
+    width: 40%;
+}
+
+.cabecalho__campobusca > button {
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    float: left;
+    height: 100%;
+    margin-top:2%;
+    width:20%;
+}
+
+.svgLupa>path{
+    fill: rgb(133, 133, 133);
+}
+
+
+.svgLupa>path:hover{
+    fill: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 @media screen and (max-width:768px){
     .cabecalho__barradepesquisa{
         margin-right: 10%;
@@ -91,21 +95,25 @@
 }
 
 @media screen and (max-width:480px){
-    .cabecalho img{
-        transform: scale(.6)
-    }
-    .cabecalho__botaologin{
-        transform: scale(.7)
-    }
-
-    .cabecalho__barradepesquisa{
-        display: none;
-    }
-
     .cabecalho{
         background-image: url(../img/lupa.png);
         background-repeat: no-repeat;
         background-position:right
     }
+
+    .cabecalho__barradepesquisa{
+        display: none;
+    }
+    
+    .cabecalho__botaologin{
+        transform: scale(.7)
+    }
+    .cabecalho img{
+        transform: scale(.6)
+    }
+
+    
+    
 }
+    
 

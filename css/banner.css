@@ -1,5 +1,13 @@
 
+.banner{
+    background-image: url(../img/Hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12%;
+}
+
 .banner__linkconsoles{
+
     background-color: var(--corAzul);
     color: var(--corBranco);
     
@@ -17,12 +25,6 @@
     top: 45.5%;
 }
 
-.banner{
-    background-image: url(../img/Hero.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 12%;
-}
 
 /* .bannerTitulo{
     color:var(--corBranco);
