@@ -26,6 +26,18 @@
     .produto{
         width: 25%;
     }
+
+    .produto:last-child, .produto:nth-last-child(1){
+        margin-right: 50%;
+    }
+
+    .produto:last-child, .produto:nth-child(5){
+        display: block;
+    }
+
+    
+
+
 }
 
 @media screen and (max-width:480px){
@@ -46,6 +58,10 @@
 
     .produto__cabecalho{
         flex-direction: column;
+    }
+
+    .produto:last-child, .produto:nth-last-child(1){
+        margin-right: 0%;
     }
 }
     
