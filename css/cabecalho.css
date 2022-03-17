@@ -95,11 +95,11 @@
 }
 
 @media screen and (max-width:480px){
-    .cabecalho{
+    /* .cabecalho{
         background-image: url(../img/lupa.png);
         background-repeat: no-repeat;
         background-position:right
-    }
+    } */
 
     .cabecalho__barradepesquisa{
         display: none;
