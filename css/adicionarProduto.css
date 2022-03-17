@@ -70,3 +70,9 @@
     }
 }
 
+@media screen and (max-width:480px){
+    .novoproduto__metodo{
+        flex-direction: column;
+    }
+}
+
