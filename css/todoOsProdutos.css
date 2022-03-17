@@ -1,8 +1,8 @@
-.sectionBanner{
+.banner{
     display: none;
 }
 
-.gradeProdutos-todosOsProdutos{
+.produtos__grade--todososprodutos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -39,7 +39,7 @@
         
     }
 
-    .cabecalhoProduto{
+    .produto__cabecalho{
         flex-direction: column;
     }
 }
