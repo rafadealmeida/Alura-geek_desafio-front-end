@@ -1,4 +1,4 @@
-.adicionarFoto{
+.metodo__adicionarfoto{
     border: 1px dashed black;
     width: 25%;
     height: 30%;
@@ -8,7 +8,7 @@
     margin-right: .5rem;
 }
 
-.botaoAdicionarProduto{
+.novoproduto__adicionar--botao{
     padding: 1rem 0;
     border-radius:0px;
     background-color: var(--corAzul);
@@ -16,7 +16,7 @@
     font-size: 16px;
     
 }
-.botaoAdicionarFoto{
+.metodo__adicionarfoto--botao{
     margin-left: .5rem;
     padding: 1rem;
     border-color: var(--corAzul);
@@ -25,7 +25,7 @@
     font-size: 16px;
 }
 
-.metodoDeAdicionarProduto{
+.novoproduto__metodo{
     display: flex;
     margin: 0 auto;
     justify-content: center;
@@ -33,7 +33,7 @@
     
 }
 
-#precoDoProduto ,#nomeDoProduto, #descricaoDoProduto{
+#novoproduto__preco ,#novoproduto__nome, #novoproduto__descricao{
     padding: 1rem .5rem;
     margin: .5rem 0;
     border: 0px;
@@ -42,14 +42,14 @@
 }
 
 
-.tituloAdicionarFoto{
+.novoproduto__titulo{
    padding: 3rem;
    color: var(--corCinzaEscuro);
    font-family: var(--fontePadrao);
    font-size: 32px;
 }
 
-.informacaoProduto{
+.novoproduto__informacoes{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -64,7 +64,7 @@
 
 
 @media screen and (max-width:768px){
-    .metodoDeAdicionarProduto{
+    .novoproduto__metodo{
         justify-content: flex-start;
         margin-left: 5%;
     }
