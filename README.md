@@ -1,3 +1,12 @@
-Alura Challenge Front-End
+#Alura Challenge Front-End
 
-Site em construção ...
+
+#Site de uma loja geek,projeto idealizado pela escola ALura, para desafiar seu alunos aos desafios do dia dia
+do mercado de trabalho
+
+<h1>Link:https://rafadealmeida.github.io/Alura-geek_desafio-front-end/index.html
+</h1>
+
+<h4 align="center"> 
+	🚧  React Select 🚀 Em construção...  🚧
+</h4>
