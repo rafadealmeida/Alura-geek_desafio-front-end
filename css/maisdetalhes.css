@@ -1,3 +1,48 @@
-.produtos__grade--todososprodutos{
+.banner{
+    display: none;
+}
 
+.produto__descricao--maisdetalhe{
+    text-align: justify;
+    line-height:1.5rem;
+
+}
+.produtos__grade--todososprodutos{
+    display: flex;
+    justify-content: space-between;
+}
+.produto__nome--maisdetalhe{
+    font-size:52px;
+    
+}
+.produto__preco--maisdetalhe{
+    margin: 1rem 0;
+}
+
+.produto--maisdetalhe{ 
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--corCinzaEscuro)
+}
+
+
+.produto--maisdetalhe picture{
+    margin-right: 1rem;
+    margin-top: 10%;
+}
+
+.produto--esconder{
+    display:none;
+}
+
+.maisdetalhe__imagem{
+    width: 100%;
+    margin-bottom: 2rem;
+    
+}
+
+.maisdetalhe__informacao{
+    width: 50%;
 }
