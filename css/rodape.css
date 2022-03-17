@@ -16,14 +16,14 @@ footer{
     
 }
 
-.linksRodape{
+.rodape__contato{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     
 }
 
-.contatoLink{
+.contato__link{
     text-decoration: none;
 }
 
@@ -35,7 +35,7 @@ footer{
     
 }
 
-#contatoNome{
+#contato__nome{
     border: 0px;
     border-radius: 4px;
     box-sizing: content-box;
@@ -46,7 +46,7 @@ footer{
     
 }
 
-#contatoMensagem{
+#contato__mensagem{
     width: 102%;
     border: 0px;
     border-radius: 4px;
@@ -56,7 +56,7 @@ footer{
     line-height: 20px;
 }
 
-#botaoEnviar{
+#contato__botaoenviar{
     background-color:var(--corAzul);
     border-radius: 0px;
     color: var(--corBranco);
@@ -75,7 +75,7 @@ footer{
 
 }
 
-.nomeContatoBox{
+.contato__nome{
     position: absolute;
 }
 
@@ -90,12 +90,12 @@ footer{
     
 }
 
-.responsividadeRodape{
+.rodape__contato--responsive{
     display: none;
     
 }
 
-.paragrafoRodape{
+.paragraforodape{
     align-items: center;
     text-align: center;
     margin-bottom: .6rem;
@@ -103,11 +103,11 @@ footer{
 
 
 @media screen and (max-width:768px){
-    #contatoMensagem{
+    #contato__mensagem{
         width: 50%;
         
     }
-    #contatoNome{
+    #contato__nome{
         width: 70%;
         margin-left: -11%;
         
@@ -122,10 +122,10 @@ footer{
     .rodape{
         justify-content: space-between;
     }
-    .linksRodape{
+    .rodape__contato{
         display: none;
     }
-    .responsividadeRodape{
+    .rodape__contato--responsive{
         display: flex;
         flex-direction: column;
         margin: 0 10% 0 5%;
@@ -137,28 +137,28 @@ footer{
         width: 100%;
     }
 
-    .linksRodapeResponsividade{
+    .contato__link--responsive{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
 
-    #contatoMensagem{
+    #contato__mensagem{
         width: 70%;
     }
 }
 
 @media screen and (max-width:480px){
-    #contatoMensagem{
+    #contato__mensagem{
         width: 84%;
         
     }
-    #contatoNome{
+    #contato__nome{
         width: 80%;
         margin-left: -18%;
         
     }
-    .contatoLink{
+    .contato__link{
         margin: 0.5rem 0;
     }
     .labelNome{
@@ -175,10 +175,10 @@ footer{
         justify-content: space-around;
         margin: 0 0 5%;
     }
-    .linksRodape{
+    .rodape__contato{
         display: none;
     }
-    .responsividadeRodape{
+    .rodape__contato--responsive{
         display: flex;
         flex-direction: column;
         margin: 5% 0;
@@ -192,14 +192,14 @@ footer{
         justify-content: space-between;
     }
 
-    .linksRodapeResponsividade{
+    .contato__link--responsive{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         text-align: center;
     }
 
-    #botaoEnviar{
+    #contato__botaoenviar{
         padding: .5rem 5rem;
         text-align: center;
         align-items: center;
