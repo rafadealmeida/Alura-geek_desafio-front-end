@@ -1,3 +1,7 @@
+.menu{
+    padding: 1rem ;
+}
+
 .metodo__adicionarfoto{
     border: 1px dashed black;
     width: 25%;
@@ -16,7 +20,7 @@
     font-size: 16px;
     
 }
-.metodo__adicionarfoto--botao{
+.novoproduto__adicionarfoto--botao{
     margin-left: .5rem;
     padding: 1rem;
     border-color: var(--corAzul);
@@ -68,11 +72,53 @@
         justify-content: flex-start;
         margin-left: 5%;
     }
+    .novoproduto__metodo{
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    .novoproduto__informacoes{
+        width: 90%;
+    }
+    .metodo__adicionarfoto{
+        width: 50%;
+    }
+   
 }
 
 @media screen and (max-width:480px){
+    .novoproduto__informacoes{
+        width: 90%;
+    }
+
     .novoproduto__metodo{
         flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .novoproduto__titulo{
+        font-size:22px
+    }
+
+    .metodo__adicionarfoto{
+        background-image: url(../img/sgv_mais.svg) ;
+        background-repeat: no-repeat;
+        background-position: 50% 20%;
+        width: 90%;
+        padding-top: 2rem;
+        margin : 0.5rem auto;
+    }
+
+    .novoproduto__adicionarfoto--botao{
+        width: 90%;
+        margin: .5rem auto;
+    }
+    .metodo__adicionarfoto>svg{
+        display: none;
+    }
+
+    .metodo__adicionarfoto>p{
+        margin-top: 1em;
     }
 }
 
