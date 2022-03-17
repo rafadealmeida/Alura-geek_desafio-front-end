@@ -17,21 +17,17 @@
     font-weight: 400;
     float:inline-start; 
     
-    /* left: 10.6%; */
+    
     line-height: 19px;
     padding: 1.2rem 1rem;
     
-    /* position: absolute; */
+    
     text-decoration: none;
 
     margin-top: 10%;
     
-    /* top: 45.5%; */
+    
 }
-
-
-
-
 
 
 /* .bannerTitulo{
@@ -61,27 +57,27 @@
 
 
     .banner__linkconsoles{
-        /* top: 37.5%; */
+        
         margin-top: 28%;
         margin-left: -41%;
 
         transform: scale(1,0.8);
-        /* left: 2%; */
+        
     }
 }
 
 @media screen and (max-width:480px){
     .banner{
         background-image: url(../img/banner-tamanho-p.png);
-        padding:25%
+        
     }
 
 
     .banner__linkconsoles{
         margin-top: 20%;
-        margin-left: -41%;
+        margin-left: -46%;
 
-        transform: scale(1,0.9);
+        transform: scale(0.8);
     }
 }
 
