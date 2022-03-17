@@ -81,16 +81,22 @@
     }
 }
 
-@media screen and (min-width:1080px){
+@media screen and (min-width:1081px){
+    .banner{
+        
+        
+        padding:14%
+    }
     .banner__linkconsoles{
-        top: 56.5%;
-        left: 9.6%;
+    transform: scale(1.5);
+    margin-top:12%
+    
     }
 }
-@media screen and (min-width:1440px){
+/* @media screen and (max-width:1440px){
     .banner__linkconsoles{
         margin-top: 10.1%;
         margin-left: 1.4%;
         transform: scale(2.5,2.2);
     }
-}
+} */
