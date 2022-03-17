@@ -1,4 +1,4 @@
-.loginUsuario{
+.usuariologin{
     display:flex;
     flex-direction: column;
     width: 25%;
@@ -8,7 +8,7 @@
     background-color: var(--corCinzaClaro);
 }
 
-.tituloLogin{
+.usuariologin__titulo{
     margin-bottom: 2rem;
     text-align: center;
 
@@ -18,7 +18,7 @@
     color:var(--corCinzaEscuro);
 }
 
-.loginUsuario input{
+.usuariologin input{
     margin: 1rem 0;
 
     padding:1rem;
@@ -26,7 +26,7 @@
     border-radius: 4px;
 }
 
-.botaoEntrar{
+.usuariologin__botaoentrar{
     background-color: var(--corAzul);
     padding: 2rem;
     color: var(--corBranco);
@@ -36,7 +36,7 @@
     width: 100%;
 }
 
-.linkBotaoEntrar{
+.usuariologin__entrar--link{
     text-decoration: none;
     color: var(--corBranco);
     font-family: 'Raleway',sans-serif;
@@ -51,7 +51,7 @@ main{
 }
 
 @media screen and (max-width: 768px){
-    .loginUsuario{
+    .usuariologin{
         width:50%;
     }
 }
