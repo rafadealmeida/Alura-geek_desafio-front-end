@@ -35,8 +35,12 @@
 
     .produto__botaoadicionar{
         transform: scale(.8);
-        width: 50%;
-        margin-left:-4%
+        width: 100%;
+        margin-left:2%;
+        
+        text-align: center;
+        padding: 2rem .5rem ;
+        align-content: center;
         
     }
 
