@@ -68,6 +68,7 @@ footer{
 .labelNome{
     position: relative;
     z-index: 2;
+    float: left;
     top:25%;
     padding:.6rem;
     color:var(--corCinzaEscuro);
@@ -112,7 +113,8 @@ footer{
         
     }
     .labelNome{
-        top: -30%;
+        top: -10%;
+        
     }
     .rodape>img{
         display: none;
@@ -161,7 +163,7 @@ footer{
         margin: 0.5rem 0;
     }
     .labelNome{
-        top: -40%;
+        
     }
     .rodape>img{
         display: none;
