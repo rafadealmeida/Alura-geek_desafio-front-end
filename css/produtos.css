@@ -6,6 +6,7 @@
 }
 
 .poduto{
+    
     box-sizing: border-box;
     display: flex;
     width: 15%;
@@ -59,7 +60,7 @@
         margin: 0 auto;
     }
     
-    .produto>img{
+    .produto img{
         width:90%
     }
 
