@@ -1,7 +1,8 @@
 :root{
     --corBranco: #ffffff;
+    --corBackgroundHeader: #ffffff;
     --corAzul:#2A7AE4;
-    --corCinza:#EAF2FD;
+    --corBackgroundFooter:#EAF2FD;
     --corBackgroundPesquisa : #F5F5F5;
     --corPadraoFonte: #464646;
     --corBackground:#E5E5E5;
@@ -12,7 +13,9 @@
 .darkmode:root{
     --corBackground :#212529;
     --corPadraoFonte: #ffffff;
-    
+    --corBackgroundHeader:#212529;
+    --corBackgroundPesquisa : #48515a;
+    --corBackgroundFooter:#c2c9d1;    
 }
 
 *{
@@ -30,6 +33,9 @@ main{
     background-color: var(--corBackground);
     padding-bottom: 2%;
     
+}
+body{
+    background-color: var(--corBackgroundHeader);
 }
 
 
