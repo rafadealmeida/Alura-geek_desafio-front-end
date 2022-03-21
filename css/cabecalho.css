@@ -29,7 +29,7 @@
 }
 
 .cabecalho__botaologin{
-    background-color:var(--corBranco);
+    background-color: var( --corBackgroundPesquisa);
     
     border: 1px solid var(--corAzul);
     color: var(--corAzul);
