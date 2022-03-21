@@ -21,12 +21,14 @@
     
 }
 .novoproduto__adicionarfoto--botao{
+    background-color: var(--corBackgroundPesquisa);
+    border-color: var(--corAzul);
+    color: var(--corAzul);
+    font-family: var(--fontePadrao);
+    font-size: 16px;
     margin-left: .5rem;
     padding: 1rem;
-    border-color: var(--corAzul);
-    font-family: var(--fontePadrao);
-    color: var(--corAzul);
-    font-size: 16px;
+
 }
 
 .novoproduto__metodo{
