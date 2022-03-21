@@ -1,8 +1,3 @@
-main{
-    background-color: var(--corCinzaClaro);
-    padding-bottom: 2%;
-    
-}
 
 .usuariologin{
     display:flex;
@@ -11,7 +6,7 @@ main{
     margin: 0 auto;
     justify-content: space-around;
     padding: 10% 0;
-    background-color: var(--corCinzaClaro);
+ 
 }
 
 .usuariologin__botaoentrar{
