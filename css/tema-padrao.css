@@ -9,11 +9,23 @@
     --fontePadrao:'Raleway',sans-serif;
 }
 
+.darkmode:root{
+    --corCinzaClaro :#212529;
+    --corCinzaClaro: #ffffff;
+}
+
+
 .container{
     max-width:1136px;
     margin:0 auto;
     
 }
+main{
+    background-color: var(--corCinzaClaro);
+    padding-bottom: 2%;
+    
+}
+
 
 
 .pularNavegacao,
