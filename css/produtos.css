@@ -28,19 +28,20 @@
 
 
 .produto__nome{
-    color: var(--corCinzaEscuro);
-    font:normal 14px 'Raleway',sans-serif;
+    
+    
+    font-size: 14px;
     padding: .3rem 0;
 }
 
 .produto__preco{
-    color: var(--corCinzaEscuro);
-    font: bold 16px 'Raleway',sans-serif;
+    
+    font: bold 16px 
 }
 
 .produtos__titulo{
-    color: var(--corCinzaEscuro);
-    font:bold 36px 'Raleway',sans-serif ;
+    
+    font:bold 36px 
 }
 
 .verTudo,.produto__link{

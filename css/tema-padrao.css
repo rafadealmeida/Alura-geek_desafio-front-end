@@ -4,14 +4,19 @@
     --corCinza:#EAF2FD;
     --corBackgroundPesquisa : #F5F5F5;
     --corCinzaEscuro: #464646;
-    --corCinzaClaro:#E5E5E5;
+    --corBackground:#E5E5E5;
 
     --fontePadrao:'Raleway',sans-serif;
 }
 
 .darkmode:root{
-    --corCinzaClaro :#212529;
-    --corCinzaClaro: #ffffff;
+    --corBackground :#212529;
+    
+}
+
+*{
+    font-family: 'Raleway', 'Open Sans', 'Segoe UI', sans-serif;
+    color: var(--corCinzaEscuro);
 }
 
 
@@ -21,7 +26,7 @@
     
 }
 main{
-    background-color: var(--corCinzaClaro);
+    background-color: var(--corBackground);
     padding-bottom: 2%;
     
 }

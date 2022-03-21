@@ -34,8 +34,6 @@
     border: 0px;
     border-radius: 4px;
     padding: 0rem .3rem .3rem .6rem;
-    font-family: 'Raleway', sans-serif;
-    color:var(--corCinzaEscuro);
     line-height: 20px;
 }
 
@@ -71,9 +69,8 @@ footer{
     float: left;
     top:25%;
     padding:.6rem;
-    color:var(--corCinzaEscuro);
     font-size:12px;
-    font-family: 'Raleway',sans-serif;
+    
     
 }
 .rodape{

@@ -22,18 +22,15 @@
 .usuariologin__entrar--link{
     text-decoration: none;
     color: var(--corBranco);
-    font-family: 'Raleway',sans-serif;
     font-size: 18px;
     font-weight: bold;
 }
 .usuariologin__titulo{
     margin-bottom: 2rem;
     text-align: center;
-
-    font-family: 'Raleway',sans-serif;
     font-size: 18px;
     font-weight:bold;
-    color:var(--corCinzaEscuro);
+    
 }
 
 .usuariologin input{

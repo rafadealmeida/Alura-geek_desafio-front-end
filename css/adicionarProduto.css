@@ -48,7 +48,7 @@
 
 .novoproduto__titulo{
    padding: 3rem;
-   color: var(--corCinzaEscuro);
+   
    font-family: var(--fontePadrao);
    font-size: 32px;
 }
