@@ -29,15 +29,9 @@
     text-decoration: none;
 }
 
-#contato__mensagem{
-    width: 102%;
-    border: 0px;
-    border-radius: 4px;
-    padding: 0rem .3rem .3rem .6rem;
-    line-height: 20px;
-}
 
 #contato__nome{
+    background-color: var( --corBackgroundPesquisa);
     border: 0px;
     border-radius: 4px;
     box-sizing: content-box;
@@ -49,10 +43,20 @@
 }
 
 
+
 .contato__nome{
     position: absolute;
 }
 
+
+#contato__mensagem{
+    background-color: var( --corBackgroundPesquisa);
+    border: 0px;
+    border-radius: 4px;
+    line-height: 20px;
+    padding: 0rem .3rem .3rem .6rem;
+    width: 102%;
+}
 
 footer{
     background-color: var(--corBackgroundFooter);
@@ -64,12 +68,13 @@ footer{
     margin-bottom: .6rem;
 }
 .labelNome{
-    position: relative;
-    z-index: 2;
-    float: left;
-    top:25%;
-    padding:.6rem;
     font-size:12px;
+    float: left;
+    padding:.6rem;
+    position: relative;
+    top:25%;
+    z-index: 2;
+
     
     
 }
@@ -81,9 +86,9 @@ footer{
 }
 
 .rodape>img{
-    width:20%;
-    height:20%;
     margin-left: -8%;
+    height:20%;
+    width:20%;
     
 }
 
