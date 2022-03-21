@@ -66,6 +66,19 @@
     width:20%;
 }
 
+#darkmode--checked{
+    border: 1px solid;
+    border-color: var(--corAzul);
+    border-radius: 4px;
+    background-image: url(../img/lampada-sgv.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 50%;
+    background-color: var(--corBackgroundPesquisa);
+    padding: 1.7rem;
+    
+}
+
 .svgLupa>path{
     fill: rgb(133, 133, 133);
 }
