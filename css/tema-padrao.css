@@ -3,7 +3,7 @@
     --corAzul:#2A7AE4;
     --corCinza:#EAF2FD;
     --corBackgroundPesquisa : #F5F5F5;
-    --corCinzaEscuro: #464646;
+    --corPadraoFonte: #464646;
     --corBackground:#E5E5E5;
 
     --fontePadrao:'Raleway',sans-serif;
@@ -11,12 +11,13 @@
 
 .darkmode:root{
     --corBackground :#212529;
+    --corPadraoFonte: #ffffff;
     
 }
 
 *{
     font-family: 'Raleway', 'Open Sans', 'Segoe UI', sans-serif;
-    color: var(--corCinzaEscuro);
+    color: var(--corPadraoFonte);
 }
 
 
