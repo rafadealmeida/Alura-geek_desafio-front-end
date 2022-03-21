@@ -42,6 +42,10 @@ input,textarea{
     background-color: var(--corBackgroundPesquisa)
 }
 
+.invisivel{
+    display: none;
+}
+
 
 
 
