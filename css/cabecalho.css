@@ -1,12 +1,17 @@
-
-
 .cabecalho{
+    width:100%;
+    margin : 0;
+    background-color:var(--corBackgroundHeader);
+}
+
+.cabecalho__flex{
     align-items: center;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding: 2% 0;
     width: 90%;
+    max-width:1136px;
 }
 
 .cabecalho__barradepesquisa{

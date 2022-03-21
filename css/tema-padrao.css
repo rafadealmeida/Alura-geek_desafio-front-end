@@ -13,7 +13,7 @@
 .darkmode:root{
     --corBackground :#212529;
     --corPadraoFonte: #ffffff;
-    --corBackgroundHeader:#212529;
+    --corBackgroundHeader:#313335;
     --corBackgroundPesquisa : #48515a;
     --corBackgroundFooter:#313335;    
 }
@@ -41,10 +41,10 @@ body{
 input,textarea{
     background-color: var(--corBackgroundPesquisa)
 }
-
-header{
+/* .cabecalho
+{
     background-color: var(--corBackgroundHeader)
-} 
+}  */
 
 
 
