@@ -35,8 +35,16 @@ main{
     
 }
 body{
-    background-color: var(--corBackgroundHeader);
+    background-color: var(--corBackground);
 }
+
+input,textarea{
+    background-color: var(--corBackgroundPesquisa)
+}
+
+header{
+    background-color: var(--corBackgroundHeader)
+} 
 
 
 
