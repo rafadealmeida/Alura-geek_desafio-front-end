@@ -128,9 +128,9 @@
         order:4;
     }
 
-    .cabecalho__barradepesquisa{
+    /* .cabecalho__barradepesquisa{
         display: none;
-    }
+    } */
     
     .cabecalho__botaologin{
         transform: scale(.7);
