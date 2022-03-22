@@ -1,6 +1,7 @@
 var pesquisa = document.querySelector(".cabecalho__barradepesquisa");
-// var tituloSessao = document.querySelector(".produtos__titulo");
-// var linkSessao = document.querySelector(".verTudo");
+// var cabecalhoProduto = document.querySelectorAll('.produtos__cabecalho')
+var tituloSessao = document.querySelectorAll(".produtos__titulo");
+var linkSessao = document.querySelectorAll(".verTudo");
 
 pesquisa.addEventListener('input', function(){
     var produto = document.querySelectorAll('.produto');
@@ -14,13 +15,24 @@ pesquisa.addEventListener('input', function(){
     
             if(!expressao.test(nome)){
                 produtoVerificado.classList.add('invisivel');
-                // tituloSessao.classList.add('invisivel');
-                // linkSessao.classList.add('invisivel');
+                    tituloSessao.forEach(function(titulo , i){
+                        titulo.classList.add('invisivel');
+                    })
+                    linkSessao.forEach(function(link, i){
+                        link.classList.add('invisivel');
+                    })
+    
+
+                
             }
             else{
                 produtoVerificado.classList.remove('invisivel');
-                // tituloSessao.classList.remove('invisivel');
-                // linkSessao.classList.remove('invisivel');
+                tituloSessao.forEach(function(titulo , i){
+                    titulo.classList.remove('invisivel');
+                })
+                linkSessao.forEach(function(link, i){
+                    link.classList.remove('invisivel');
+                })
             }
         }
     }
@@ -29,9 +41,12 @@ pesquisa.addEventListener('input', function(){
         for (let i = 0; i < produto.length; i++) {
             var produtoVerificado = produto[i];
             produtoVerificado.classList.remove('invisivel');
-            // tituloSessao.classList.remove('invisivel');
-            // linkSessao.classList.remove('invisivel');
-            
+                tituloSessao.forEach(function(titulo , i){
+                    titulo.classList.remove('invisivel');
+                })
+                linkSessao.forEach(function(link, i){
+                    link.classList.remove('invisivel');
+                })
         }
     }
 
