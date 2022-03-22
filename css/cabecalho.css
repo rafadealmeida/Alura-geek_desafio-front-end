@@ -147,6 +147,7 @@
 
     #darkmode--checked{
         order: -1;
+        transform: scale(.7);
     }
     
     
