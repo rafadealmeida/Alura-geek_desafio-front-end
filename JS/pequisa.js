@@ -1,7 +1,7 @@
 var pesquisa = document.querySelector(".cabecalho__barradepesquisa");
-// var cabecalhoProduto = document.querySelectorAll('.produtos__cabecalho')
 var tituloSessao = document.querySelectorAll(".produtos__titulo");
 var linkSessao = document.querySelectorAll(".verTudo");
+
 
 pesquisa.addEventListener('input', function(){
     var produto = document.querySelectorAll('.produto');
