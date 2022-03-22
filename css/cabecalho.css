@@ -116,17 +116,39 @@
         background-position:right
     } */
 
+    .cabecalho{
+        min-width:360px;
+        max-width:480px;
+    }
+
+    .cabecalho__campobusca > button{
+        width:100%;
+    }
+    .cabecalho__campobusca{
+        order:4;
+    }
+
     .cabecalho__barradepesquisa{
         display: none;
     }
     
     .cabecalho__botaologin{
-        transform: scale(.7)
+        transform: scale(.7);
+        margin-left:-15%;
     }
+
+    .cabecalho__logo{
+        margin-left:-10%;
+    }
+
     .cabecalho img{
         transform: scale(.6)
     }
 
+    #darkmode--checked{
+        order: -1;
+    }
+    
     
     
 }
