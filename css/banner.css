@@ -20,9 +20,9 @@
     
     
     line-height: 19px;
-    padding: 1.2rem 1rem;
+    padding: 1.2rem .8rem;
     
-    
+    margin-left: -1%;
     text-decoration: none;
 
     margin-top: 10%;
@@ -46,6 +46,7 @@
 .bannerParagrafo{
     color: var(--corBranco);
     font-weight: 700;
+    
     
 } 
 
@@ -102,10 +103,7 @@
     
     }
 
-    .bannerTitulo, .bannerParagrafo{
-        font-size: 22px;
-        opacity: 0;
-    }
+    
 }
 /* @media screen and (max-width:1440px){
     .banner__linkconsoles{
