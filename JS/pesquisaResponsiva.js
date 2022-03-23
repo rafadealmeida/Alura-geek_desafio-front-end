@@ -5,8 +5,7 @@ var lupa = document.querySelector('.cabecalho__campobusca >button');
 
 var larguraTela = window.screen.width;
 
-console.log(larguraTela);
-console.log(lupa);
+
 
 if(larguraTela<=480){
     barraPesquisa.classList.add('invisivel');
@@ -17,9 +16,9 @@ if(larguraTela<=480){
         
     })
 }
-
 else{
-    botaoLogin.classList.add('invisivel');
-        barraPesquisa.classList.add('invisivel');
+    botaoLogin.classList.remove('invisivel');
+        barraPesquisa.classList.remove('invisivel');
         lupa.classList.remove('invisivel');
+        campobusca.classList.remove('invisivel');
 }
