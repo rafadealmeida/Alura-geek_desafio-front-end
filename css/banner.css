@@ -46,6 +46,7 @@
 .bannerParagrafo{
     color: var(--corBranco);
     font-weight: 700;
+    font-size: 2rem;
     
     
 } 
@@ -99,8 +100,8 @@
     }
     .banner__linkconsoles{
     transform: scale(1.5);
-    margin-top:12%
-    
+    margin-top:12%;
+    margin-left:1%;
     }
 
     
