@@ -67,7 +67,7 @@
     }
     .bannerTitulo, .bannerParagrafo{
         font-size: 22px;
-        visibility: hidden;
+        opacity: 0;
     }
 }
 
@@ -100,7 +100,7 @@
 
     .bannerTitulo, .bannerParagrafo{
         font-size: 22px;
-        visibility: hidden;
+        opacity: 0;
     }
 }
 /* @media screen and (max-width:1440px){
