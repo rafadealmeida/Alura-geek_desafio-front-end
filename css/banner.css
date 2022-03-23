@@ -73,15 +73,18 @@
 
 @media screen and (max-width:480px){
     .banner{
-        background-image: url(../img/banner-tamanho-m.png);
-        padding: 5%;
+        background-image: url(../img/banner-tamanho-p.png);
+        /* padding: 5%; */
+        background-size: 100%;
+        background-position: left;
+    
         
     }
 
 
     .banner__linkconsoles{
         margin-top: -4%;
-        margin-left: -3%;
+        margin-left: -19%;
 
         transform: scale(0.8);
     }
