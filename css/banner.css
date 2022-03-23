@@ -1,8 +1,9 @@
 
 .banner{
-    background-image: url(../img/Hero.png);
+    background-image: url(../img/banner__semfonte--gg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 12%;
 }
 
@@ -30,28 +31,28 @@
 }
 
 
-/* .bannerTitulo{
+ .bannerTitulo{
     color:var(--corBranco);
-    font-family: 'Raleway' sans-serif;
     font-size: 4.43rem;
     font-style: normal;
     font-weight: 700;
     line-height: 61px;
     letter-spacing: 0em;
     text-align: left;
-    margin: 0 auto;
+    margin-bottom: 1rem;
 
-} */
+} 
 
-/* .bannerParagrafo{
+.bannerParagrafo{
     color: var(--corBranco);
+    font-weight: 700;
     
-} */
+} 
 
 @media screen and (max-width:768px){
     .banner{
         background-image: url(../img/banner-tamanho-m.png);
-        
+        background-position: center;
         padding:25%
     }
 
@@ -64,11 +65,15 @@
         transform: scale(1,0.8);
         
     }
+    .bannerTitulo, .bannerParagrafo{
+        font-size: 22px;
+        visibility: hidden;
+    }
 }
 
 @media screen and (max-width:480px){
     .banner{
-        background-image: url(../img/banner-tamanho-p.png);
+        background-image: url(../img/banner-tamanho-m.png);
         
     }
 
@@ -91,6 +96,11 @@
     transform: scale(1.5);
     margin-top:12%
     
+    }
+
+    .bannerTitulo, .bannerParagrafo{
+        font-size: 22px;
+        visibility: hidden;
     }
 }
 /* @media screen and (max-width:1440px){
