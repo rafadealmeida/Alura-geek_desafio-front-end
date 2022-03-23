@@ -71,6 +71,26 @@
     width:20%;
 }
 
+.cabecalho__darkmode{
+}
+
+#cabecalho__darkmode--checkbox{
+    visibility:hidden;
+}
+
+.cabecalho__darkmode--checkmark{
+    background-color: var(--corBackgroundPesquisa);
+    background-image: url(../img/lampada-sgv.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: var(--corAzul);
+    padding: .5rem 1rem;
+    width:20%;
+}
+
 #darkmode--checked{
     border: 1px solid;
     border-color: var(--corAzul);
