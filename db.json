@@ -3,8 +3,39 @@
         {   
             "id":1,
             "nome":"Caneca Stromtropper",
+            "preco":"30,00",
+            "img":"../img/Produtos-StarWars/unsplash_6FDXGY9J6y4.png"
+        },
+        {   
+            "id":2,
+            "nome":"Darth Vader",
             "preco":"60,00",
-            "img":"/img/Produtos-StarWars/caneca_starwars.jpg"
+            "img":"../img/Produtos-StarWars/unsplash_epRFE_hBNjo.png"
+        },
+        {   
+            "id":3,
+            "nome":"Stromtropper",
+            "preco":"120,00",
+            "img":"../img/Produtos-StarWars/unsplash_4OHkK555s1A.png"
+        },
+        {   
+            "id":4,
+            "nome":"Yoda",
+            "preco":"180,00",
+            "img":"../img/Produtos-StarWars/unsplash_KeGToDVN0l4.png"
+        },
+        {   
+            "id":5,
+            "nome":"Baby Yoda",
+            "preco":"200,00",
+            "img":"../img/Produtos-StarWars/unsplash_R8L1l9RN198.png"
+        },
+        {   
+            "id":6,
+            "nome":"Kylo Ren",
+            "preco":"1400,00",
+            "img":"../img/Produtos-StarWars/unsplash_1VV1MRafd7A.png"
         }
+        
     ]
 }
