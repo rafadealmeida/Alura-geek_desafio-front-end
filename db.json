@@ -1,0 +1,10 @@
+{
+    "produtos":[
+        {   
+            "id":1,
+            "nome":"Caneca Stromtropper",
+            "preco":"60,00",
+            "img":"/img/Produtos-StarWars/caneca_starwars.jpg"
+        }
+    ]
+}

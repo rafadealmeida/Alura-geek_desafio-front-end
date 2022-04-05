@@ -1,0 +1,20 @@
+{
+  "name": "alura-geek_desafio-front-end",
+  "version": "1.0.0",
+  "description": "do mercado de trabalho, usando de base desgin do Figma,construindo o site do zero, com metas semanais, divididas em 4 semanas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafadealmeida/Alura-geek_desafio-front-end.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafadealmeida/Alura-geek_desafio-front-end/issues"
+  },
+  "homepage": "https://github.com/rafadealmeida/Alura-geek_desafio-front-end#readme"
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Alura Geek || Sua loja nerd!</title>
+
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/tema-padrao.css">
+    <link rel="stylesheet" href="../css/cabecalho.css">
+    <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/produtos.css">
+    <link rel="stylesheet" href="../css/rodape.css">
+    <link rel="stylesheet" href="../css/telaLogin.css">
+   
+    
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+    </style> 
+
+
+</head>
+<body>
+
+    <!-- link invisível para melhorar a assediabilidade do site -->
+    <a href="#conteudoPrincipal" class="pularNavegacao">Pular para conteúdo Principal</a>
+
+    <header class="cabecalho">
+
+            <div class="cabecalho__flex">
+                  <a href="index.html" class="cabecalho__logo">
+                    <img src="../img/Logo-Home.png" alt="Logo , um controle na cor azul ao lado do texto Alura Geek ">
+                </a>
+                
+                <div class="cabecalho__campobusca">
+                    <input type="text" for="pequisa" placeholder="O que deseja encontrar?" class="cabecalho__barradepesquisa">
+                        <button class-="barradepesquisa__botaoLupa">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="svgLupa">
+                                <path d="M12.4996 11.5H11.7096L11.4296 11.23C12.6296 9.83002 13.2496 7.92002 12.9096 5.89002C12.4396 3.11002 10.1196 0.890015 7.31965 0.550015C3.08965 0.0300153 -0.470351 3.59001 0.049649 7.82001C0.389649 10.62 2.60965 12.94 5.38965 13.41C7.41965 13.75 9.32965 13.13 10.7296 11.93L10.9996 12.21V13L15.2496 17.25C15.6596 17.66 16.3296 17.66 16.7396 17.25C17.1496 16.84 17.1496 16.17 16.7396 15.76L12.4996 11.5ZM6.49965 11.5C4.00965 11.5 1.99965 9.49002 1.99965 7.00002C1.99965 4.51002 4.00965 2.50002 6.49965 2.50002C8.98965 2.50002 10.9996 4.51002 10.9996 7.00002C10.9996 9.49002 8.98965 11.5 6.49965 11.5Z" fill="#A2A2A2"/>
+                                </svg>
+                        </button> 
+                </div> 
+
+                <div class="cabecalho__campobusca--responsive invisivel ">
+                    <input type="text" class="campobusca__responsive--input" placeholder="O que deseja encontrar?">
+                    <button class="responsive__input--lupa"></button>
+                </div>
+                <button class="responsive__input--x invisivel"></button>
+                
+                <!-- <script src="../JS/login.js"></script> -->
+
+                <a href ='pagina-login.html'class="cabecalho__botaologin">Login</a>
+                
+                
+                <button id="darkmode--checked"></button>
+<!-- teste para checkbox
+                <label class="cabecalho__darkmode">
+                    <input type="checkbox" name="darkmode" id="cabecalho__darkmode--checkbox">
+                    <span class="cabecalho__darkmode--checkmark"></span>
+                </label> -->
+
+                <script src="../JS/darkMode.js"></script>
+                <script src="../JS/pesquisaResponsiva.js"></script>
+            </div>
+
+        
+    </header>
+    
+    <main>
+        
+        <section class="banner">
+    
+            <h1 class="bannerTitulo" id ="pularNavegacao">Dezembro Promocional</h1>
+            <p class="bannerParagrafo">Produtos selecionado com 33% de desconto</p>
+            <aside class="banner__link--responsive"><a href="#consoles" class="banner__linkconsoles">Ver consoles</a></aside>
+        </section>
+
+        <section class="produtos container">
+
+            <div class="produtos__cabecalho" id="#conteudoPrincipal" >
+                <h2 class="produtos__titulo">Star Wars</h2>
+                <a href="#" class="verTudo">Ver tudo &#10132; </a>
+                
+            </div>
+            
+            <ul class="produtos__grade">
+                <!-- <li class="produto">
+                    <a href="maisdetalhes.html"><img src="../img/Produtos-StarWars/unsplash_6FDXGY9J6y4.png" alt="Caneca branca, simulando um capacete de um Stormtrooper, de StarWars"></a>
+                    <h3 class="produto__nome">Caneca Stormtrooper</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="maisdetalhes.html" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+                <li class="produto">
+                    <img src="../img/Produtos-StarWars/unsplash_epRFE_hBNjo.png" alt="Boneco,pequeno, feito de peças lego, do vilão Darth Vader, de StarWars">
+                    <h3 class="produto__nome">Lego Darth Vader</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+                <li class="produto">
+                    <img src="../img/Produtos-StarWars/unsplash_KeGToDVN0l4.png" alt="Boneco do Yoda,de estatura pequena,sem articulação">
+                    <h3 class="produto__nome">Yoda</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+                <li class="produto">
+                    <img src="../img/Produtos-StarWars/unsplash_4OHkK555s1A.png" alt="Boneco do Stormtrooper, segurando uma arma,com armadura.">
+                    <h3 class="produto__nome">Stormtrooper</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+                <li class="produto">
+                    <img src="../img/Produtos-StarWars/unsplash_R8L1l9RN198.png" alt="Boneco do baby Yioda, de Mandalorian,">
+                    <h3 class="produto__nome">Baby Yoda</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+                <li class="produto">
+                    <img src="../img/Produtos-StarWars/unsplash_1VV1MRafd7A.png" alt="Boneco do vilão Kylo Ren, com roupa e capuz, com o capacete, empunhando uma pistola">
+                    <h3 class="produto__nome">Kylo Ren</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li> -->
+            </ul>
+
+            <!-- <div class="produtos__cabecalho" id="consoles">
+                <h2 class="produtos__titulo">Consoles</h2>
+                <a href="#" class="verTudo">Ver tudo &#10132; </a>
+                
+            </div>
+            
+            <ul class="produtos__grade">
+                <li class="produto">
+                    <img src="../img/Produtos-Consoles/unsplash_0POwK6iAiRQ.png" alt="Controle branco de Xbox One">
+                    <h3 class="produto__nome">Controle Xbox Onne</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+                <li class="produto">
+                    <img src="../img/Produtos-Consoles/unsplash_caNzzoxls8Q.png" alt="Console PlayStation 5, com um controle">
+                    <h3 class="produto__nome">PlayStation 5</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+                <li class="produto">
+                    <img src="../img/Produtos-Consoles/unsplash_ZV7lnfyQLmA.png" alt="Console Nintendo Entertainment System , conhecido como N.E.S">
+                    <h3 class="produto__nome">Nintendo (NES)</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+                <li class="produto">
+                    <img src="../img/Produtos-Consoles/unsplash_wa5z9o9fgjw.png" alt="2 controles do Nitendo Switch, vermelho e azul">
+                    <h3 class="produto__nome">Controles Nintendo Switch</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+                <li class="produto">
+                    <img src="../img/Produtos-Consoles/unsplash_Zjn4dT993-g.png" alt="Console Xbox One X">
+                    <h3 class="produto__nome">Xbox One X</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+                <li class="produto">
+                    <img src="../img/Produtos-Consoles/unsplash_k-xYhI3-gJM.png" alt="Console portátil , Gameboy">
+                    <h3 class="produto__nome">GameBoy</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+            </ul>
+
+            <div class="produtos__cabecalho">
+                <h2 class="produtos__titulo">Diversos</h2>
+                <a href="#" class="verTudo">Ver tudo &#10132; </a>
+                
+            </div>
+            
+            <ul class="produtos__grade">
+                <li class="produto">
+                    <img src="../img/Produtos-Diversos/unsplash_fMP-oCze3AY.png" alt="Camisa com estampa da Logotipo do Atari,logotipo em cor vermelha, com escritas em Japonês, em preto">
+                    <h3 class="produto__nome">Camisa Atari</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+                <li class="produto">
+                    <img src="../img/Produtos-Diversos/unsplash_bUgaIaZysH0.png" alt="Suporte para conectar 2 controles de Nitendo Switch, o tornando um gamepad mais proximo do padrão de Xbox e PlayStation">
+                    <h3 class="produto__nome">Suporte Controle <br> Nintendo Switch</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+                <li class="produto">
+                    <img src="../img/Produtos-Diversos/unsplash_sYVY_ZKwaxU.png" alt="Boneco do Sonic, sem articulação">
+                    <h3 class="produto__nome">Boneco Sonic</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+                <li class="produto">
+                    <img src="../img/Produtos-Diversos/unsplash_jMT6BrgBuXU.png" alt="Rádio relógio com desgin retrô, na cor rosa">
+                    <h3 class="produto__nome">Rádio relógio</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+                <li class="produto">
+                    <img src="../img/Produtos-Diversos/unsplash_MxVkWPiJALs.png" alt="Óculos de realidade Virtual">
+                    <h3 class="produto__nome">Óculos de <br> realidade Virtual</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+                <li class="produto">
+                    <img src="../img/Produtos-Diversos/unsplash_r27umXAelDc.png" alt="Fantasia do Pikachu, para adulto, fantasia contem estofamento">
+                    <h3 class="produto__nome">Fantasia Pikachu</h3>
+                    <p class="produto__preco">R$ 60,00</p>
+                    <a href="#" class="produto__link">Ver produto</a>
+                    </img>
+                </li>
+            </ul> -->
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="rodape container">
+            
+                <img src="../img/Logo-Footer.png" alt="">
+                <div class="rodape__contato">
+                    <a href="#" class="contato__link">Quem somos nós</a>
+                    <a href="#" class="contato__link">Política de privacidade</a>
+                    <a href="#" class="contato__link">Programa de Fidelidade</a>
+                    <a href="#" class="contato__link">Nossa lojas</a>
+                    <a href="#" class="contato__link">Quero ser franqueado</a>
+                    <a href="#" class="contato__link">Anuncie aqui</a>
+                </div>
+
+                <div class="rodape__contato--responsive">
+                    <img src="../img/Logo-Footer.png" alt="">
+                    <div class="contato__link--responsive">
+                        <a href="#" class="contato__link">Quem somos nós</a>
+                        <a href="#" class="contato__link">Política de privacidade</a>
+                        <a href="#" class="contato__link">Programa de Fidelidade</a>
+                        <a href="#" class="contato__link">Nossa lojas</a>
+                        <a href="#" class="contato__link">Quero ser franqueado</a>
+                        <a href="#" class="contato__link">Anuncie aqui</a>
+                    </div>
+
+                </div>
+            
+
+            <form action="" class="contato">
+
+
+                <div class="contadoNomeBox">
+                    <label for="nome" class="labelNome">Nome</label>
+                    <input type="text" name="nome" id="contato__nome">
+                </div>
+
+                <textarea name="mensagem" id="contato__mensagem" cols="60" rows="5" placeholder="Escreva sua mensagem"></textarea>
+                
+                <input type="submit" value="Enviar mensagem" id="contato__botaoenviar">
+            </form>
+        
+        </div>
+
+    </footer>
+    <p class="paragraforodape">Desenvolvido por Rafael Almeida <br>2022</p>
+
+    <script src="../JS/pequisa.js"></script>
+    <script src="../JS/teste_api.js"></script>
+    
+</body>
+</html>
