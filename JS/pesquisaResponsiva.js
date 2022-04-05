@@ -7,7 +7,7 @@ var logo = document.querySelector('.cabecalho__logo');
 var sair = document.querySelector('.responsive__input--x')
 var barraPesquisaResponsiva = document.querySelector('.cabecalho__campobusca--responsive')
 
-console.log(logo);
+
 var larguraTela = window.screen.width;
 
 const itensInvisiveis = [botaoLogin,lupa,darkMode,logo,campobusca];
