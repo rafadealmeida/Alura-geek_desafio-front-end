@@ -11,7 +11,7 @@ const criarItemProduto = (nome,img,preco,id) =>{
     const itemProduto = document.createElement("li")
     const conteudo = `
         
-        <a href="maisdetalhes.html?id=${id}" class="produto__link"><img src="${img}" alt=""></a>
+        <a href="maisdetalhes.html?id=${id}" class="produto__link"><img src="${img}" alt="">
         <h3 class="produto__nome">${nome}</h3>
         <p class="produto__preco">${preco}</p>
         <a href="maisdetalhes.html?id=${id}" class="produto__link">Ver produto</a>
@@ -23,14 +23,39 @@ const criarItemProduto = (nome,img,preco,id) =>{
     return itemProduto;
 }
 
-const gradeProduto = document.querySelector('.produtos__grade')
+const gradeProduto = document.querySelectorAll('.produtos__grade')
+const arrayCategorias =Array.from(gradeProduto)
+
+// console.log(arrayCategorias)
+
+
+
 
 const render = async () =>{
+    
+    const categoria = arrayCategorias.map(function(catagory, i){
+        const categorias = catagory.dataset.categoria
+        // console.log(categorias)
+        return categorias
+    })
+    
+
     try {
         const dados = await listaProdutos()
-
+  
         dados.forEach(elemento=>{
-            gradeProduto.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
+            
+            categoria.forEach(function(categoriaItem){
+                if(categoriaItem == elemento.categoria){
+                    gradeProduto.forEach(function(grade){
+                        grade.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
+                        
+                    })
+                }
+            })
+            
+            
+            
         })
 
     }
