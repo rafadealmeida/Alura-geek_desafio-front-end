@@ -11,7 +11,7 @@ const criarItemProduto = (nome,img,preco,id) =>{
     const itemProduto = document.createElement("li")
     const conteudo = `
         
-        <img src="${img}" alt="">
+        <a href="maisdetalhes.html?id=${id}" class="produto__link"><img src="${img}" alt=""></a>
         <h3 class="produto__nome">${nome}</h3>
         <p class="produto__preco">${preco}</p>
         <a href="maisdetalhes.html?id=${id}" class="produto__link">Ver produto</a>
