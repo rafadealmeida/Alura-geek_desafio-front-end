@@ -53,9 +53,7 @@ const render = async () =>{
                     })
                 }
             })
-            
-            
-            
+                                    
         })
 
     }
