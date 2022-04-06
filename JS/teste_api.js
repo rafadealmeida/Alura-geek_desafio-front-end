@@ -42,17 +42,29 @@ const render = async () =>{
 
     try {
         const dados = await listaProdutos()
+
   
         dados.forEach(elemento=>{
             
-            categoria.forEach(function(categoriaItem){
-                if(categoriaItem == elemento.categoria){
+            // categoria.forEach(function(categoriaItem,i){
+            //     if(categoriaItem === elemento.categoria){
+            //         gradeProduto.forEach(function(grade){
+            //             grade.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
+                        
+            //         })
+            //     }
+            // })
+
+            for (let i = 0; i < categoria.length; i++) {
+                const categoriaItem = categoria[i];
+
+                if(categoriaItem === elemento.categoria){
                     gradeProduto.forEach(function(grade){
                         grade.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
-                        
-                    })
+                    }) 
                 }
-            })
+                
+            }
                                     
         })
 
