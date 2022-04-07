@@ -7,7 +7,9 @@
     
 }
 [data-imagem]{
-    width: 200%;
+    width: 120%;
+    margin-left: -10%;
+    height:400px
 }
 
 .maisdetalhe__informacao{
@@ -22,6 +24,8 @@
 .produtos__grade--todososprodutos{
     display: flex;
     justify-content: space-between;
+    order: 4;
+    margin-top:2rem
 }
 
 
@@ -63,10 +67,15 @@
     }
     [data-imagem]{
         width: 100%;
+        margin-left: -5%;
     }
 }
 
 @media screen and (max-width:480px){
+    [data-imagem]{
+        margin-left:0;
+        width: 105%;
+    }
 
     .maisdetalhe__informacao{
         width: 100%;

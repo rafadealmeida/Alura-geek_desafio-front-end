@@ -1,6 +1,6 @@
 import { produtosService } from "./teste_api.js";
 
-const criarItemProduto = (nome,img,preco,id) =>{
+export const criarItemProduto = (nome,img,preco,id) =>{
     const itemProduto = document.createElement("li")
     const conteudo = `
         
@@ -49,7 +49,7 @@ const render = async () =>{
     
     try {
         const dados = await produtosService.listaProdutos()
-            console.log(dados)
+            
             
         dados.forEach(elemento=>{
                       

@@ -1,4 +1,5 @@
 import { produtosService } from "./teste_api.js";
+import { criarItemProduto } from "./produtos--controller.js";
 // import { detalhesProduto } from "./produtos--controller.js";
 
 const pegarURL = new URL(window.location)
@@ -6,6 +7,9 @@ const pegarURL = new URL(window.location)
 const id = pegarURL.searchParams.get('id')
 
 const produtoDestaque = document.querySelector('[data-produtos="Destaque"]')
+const testeDetalhes = document.querySelector('[data-div]')
+
+const produtosSemelhante = document.querySelector(".produtos__grade--todososprodutos")
 
 const detalhesProduto = (nome,img,preco,id,descricao) =>{
     const sessaoDetalhaProduto = document.createElement("section")
@@ -33,15 +37,22 @@ const renderProduto = async () =>{
     
     try {
         const dadosProduto = await produtosService.detalhaProdutos(id)
-        console.log(dadosProduto)
+      
 
         produtoDestaque.appendChild(detalhesProduto(dadosProduto.nome,dadosProduto.img,dadosProduto.preco,dadosProduto.id,dadosProduto.detalhe))
 
-        // dadosProduto.forEach(elemento=>{
-
-        //     produtoDestaque.appendChild(detalhesProduto(elemento.nome,elemento.preco,elemento.descricao,elemento.img))
-        // })
-
+       const produtosRelacionado = await produtosService.listaProdutos()
+        
+       produtosRelacionado.forEach(elemento=>{
+        console.log(produtosSemelhante.childNodes)
+            
+        if(produtosSemelhante.children.length<6){
+            produtosSemelhante.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
+                
+        }
+            
+       })
+       
     }
     catch(erro){
         console.log(erro)
