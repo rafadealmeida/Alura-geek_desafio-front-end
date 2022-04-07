@@ -52,10 +52,122 @@
         {   
             "id":7,
             "nome":"Xbox",
-            "preco":"140,00",
+            "preco":"340,00",
             "img":"../img/Produtos-Consoles/unsplash_0POwK6iAiRQ.png",
             "detalhe":"Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
             "categoria":"Console"
+        },
+        {   
+            "id":8,
+            "nome":"PlayStation 5",
+            "preco":"4999,00",
+            "img":"../img/Produtos-Consoles/unsplash_caNzzoxls8Q.png",
+            "detalhe":"Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
+            "categoria":"Console"
+        },
+        {   
+            "id":9,
+            "nome":"Nintendo (NES)",
+            "preco":"2400,00",
+            "img":"../img/Produtos-Consoles/unsplash_ZV7lnfyQLmA.png",
+            "detalhe":"Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
+            "categoria":"Console"
+        },
+        {   
+            "id":10,
+            "nome":"Controles Nintendo Switch",
+            "preco":"140,00",
+            "img":"../img/Produtos-Consoles/unsplash_wa5z9o9fgjw.png",
+            "detalhe":"Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
+            "categoria":"Console"
+        },
+        {   
+            "id":11,
+            "nome":"Xbox One X",
+            "preco":"2999,00",
+            "img":"../img/Produtos-Consoles/unsplash_Zjn4dT993-g.png",
+            "detalhe":"Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
+            "categoria":"Console"
+        },
+        {   
+            "id":12,
+            "nome":"GameBoy",
+            "preco":"140,00",
+            "img":"../img/Produtos-Consoles/unsplash_k-xYhI3-gJM.png",
+            "detalhe":"Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
+            "categoria":"Console"
+        },
+        {   
+            "id":13,
+            "nome":"Camisa Atari",
+            "preco":"140,00",
+            "img":"../img/Produtos-Diversos/unsplash_fMP-oCze3AY.png",
+            "detalhe":"Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
+            "categoria":"Diversos"
+        },
+        {   
+            "id":14,
+            "nome":"Suporte Controle <br> Nintendo Switch",
+            "preco":"140,00",
+            "img":"../img/Produtos-Diversos/unsplash_bUgaIaZysH0.png",
+            "detalhe":"Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
+            "categoria":"Diversos"
+        },
+        {   
+            "id":15,
+            "nome":"Boneco Sonic",
+            "preco":"60,00",
+            "img":"../img/Produtos-Diversos/unsplash_sYVY_ZKwaxU.png",
+            "detalhe":"Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
+            "categoria":"Diversos"
+        },
+        {   
+            "id":16,
+            "nome":"Rádio relógio",
+            "preco":"140,00",
+            "img":"../img/Produtos-Diversos/unsplash_jMT6BrgBuXU.png",
+            "detalhe":"Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
+            "categoria":"Diversos"
+        },
+        {   
+            "id":17,
+            "nome":"Óculos de <br> realidade Virtual",
+            "preco":"140,00",
+            "img":"../img/Produtos-Diversos/unsplash_MxVkWPiJALs.png",
+            "detalhe":"Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
+            "categoria":"Diversos"
+        },
+        {   
+            "id":18,
+            "nome":"Fantasia Pikachu",
+            "preco":"440,00",
+            "img":"../img/Produtos-Diversos/unsplash_r27umXAelDc.png",
+            "detalhe":"Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
+            "categoria":"Diversos"
+        },
+        {   
+            "id":19,
+            "nome":"Fantasia Pikachu",
+            "preco":"140,00",
+            "img":"../img/Produtos-Consoles/unsplash_0POwK6iAiRQ.png",
+            "detalhe":"Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
+            "categoria":"Diversos1111"
+        },
+        {   
+            "id":20,
+            "nome":"Xbox",
+            "preco":"140,00",
+            "img":"../img/Produtos-Consoles/unsplash_0POwK6iAiRQ.png",
+            "detalhe":"Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
+            "categoria":"Diversos111"
+        },
+        {   
+            "id":21,
+            "nome":"Xbox",
+            "preco":"140,00",
+            "img":"../img/Produtos-Consoles/unsplash_0POwK6iAiRQ.png",
+            "detalhe":"Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
+            "categoria":"Diversos11111"
         }
         
         
