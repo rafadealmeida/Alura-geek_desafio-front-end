@@ -1,0 +1,1 @@
+const pegarURL = new URL(window.location)
