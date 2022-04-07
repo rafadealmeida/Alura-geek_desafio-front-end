@@ -28,6 +28,10 @@ const arrayCategorias =Array.from(gradeProduto)
 
 // console.log(arrayCategorias)
 
+const sessaoStarWars = document.querySelector('[data-categoria="Star Wars"]')
+const sessaoConsole = document.querySelector('[data-categoria="Console"]')
+const sessaoDiversos = document.querySelector('[data-categoria="Diversos"]')
+
 
 
 
@@ -43,28 +47,26 @@ const render = async () =>{
     try {
         const dados = await listaProdutos()
 
+        // const catagoriaProduto = arrayCategorias.filter((categoriaItem =>(arrayCategorias.categoria == elemento.categoria)))
   
         dados.forEach(elemento=>{
             
-            // categoria.forEach(function(categoriaItem,i){
-            //     if(categoriaItem === elemento.categoria){
-            //         gradeProduto.forEach(function(grade){
-            //             grade.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
+            
+                if("Star Wars" === elemento.categoria){
+                    
+                        sessaoStarWars.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
                         
-            //         })
-            //     }
-            // })
-
-            for (let i = 0; i < categoria.length; i++) {
-                const categoriaItem = categoria[i];
-
-                if(categoriaItem === elemento.categoria){
-                    gradeProduto.forEach(function(grade){
-                        grade.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
-                    }) 
-                }
                 
-            }
+                } 
+                else if("Console" === elemento.categoria){
+                    sessaoConsole.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
+                }
+                else if("Diversos" === elemento.categoria){
+                    sessaoDiversos.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
+                }
+            
+
+            
                                     
         })
 
