@@ -46,11 +46,11 @@ const renderProduto = async () =>{
        produtosRelacionado.forEach(elemento=>{
         console.log(produtosSemelhante.childNodes)
             
-        if(produtosSemelhante.children.length<6){
+        if(produtosSemelhante.children.length<6 && dadosProduto.id !== elemento.id && dadosProduto.categoria == elemento.categoria){
+            
             produtosSemelhante.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
                 
-        }
-            
+        }  
        })
        
     }

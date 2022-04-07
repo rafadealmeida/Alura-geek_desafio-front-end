@@ -59,7 +59,7 @@ const render = async () =>{
                         
                 
                 } 
-                else if("Console" === elemento.categoria){
+                else if("Console" === elemento.categoria && sessaoConsole.children.length<6){
                     sessaoConsole.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
                 }
                 else if("Diversos" === elemento.categoria){

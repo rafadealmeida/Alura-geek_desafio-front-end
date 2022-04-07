@@ -147,11 +147,11 @@
         },
         {   
             "id":19,
-            "nome":"Fantasia Pikachu",
-            "preco":"140,00",
-            "img":"../img/Produtos-Consoles/unsplash_0POwK6iAiRQ.png",
+            "nome":"DualSense 5",
+            "preco":"400,00",
+            "img":"../img/Produtos-Consoles/ps5.jpg",
             "detalhe":"Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-            "categoria":"Diversos1111"
+            "categoria":"Console"
         },
         {   
             "id":20,
