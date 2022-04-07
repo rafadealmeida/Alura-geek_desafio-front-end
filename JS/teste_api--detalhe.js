@@ -11,8 +11,8 @@ const detalhesProduto = (nome,img,preco,id,descricao) =>{
     const sessaoDetalhaProduto = document.createElement("section")
     const detalhes = ` 
     <picture>
-        <source media="(max-width:768px)" srcset="${img}">
-        <img src="../img/Produtos-StarWars/caneca__starwars.jpg" alt="" class="maisdetalhe__imagem">
+        
+        <img src="${img}" alt=""  data-imagem>
     </picture>
         <aside class="maisdetalhe__informacao">
             <h1 class="produto__nome--maisdetalhe" id="#conteudoPrincipal__maisdetalhes">${nome}</h1>
@@ -33,14 +33,14 @@ const renderProduto = async () =>{
     
     try {
         const dadosProduto = await produtosService.detalhaProdutos(id)
-        const array = Array.from(dadosProduto)
-        
-        console.log(array)
+        console.log(dadosProduto)
 
-        dadosProduto.forEach(elemento=>{
+        produtoDestaque.appendChild(detalhesProduto(dadosProduto.nome,dadosProduto.img,dadosProduto.preco,dadosProduto.id,dadosProduto.detalhe))
 
-            produtoDestaque.appendChild(detalhesProduto(elemento.nome,elemento.preco,elemento.descricao,elemento.img))
-        })
+        // dadosProduto.forEach(elemento=>{
+
+        //     produtoDestaque.appendChild(detalhesProduto(elemento.nome,elemento.preco,elemento.descricao,elemento.img))
+        // })
 
     }
     catch(erro){

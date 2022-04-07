@@ -6,6 +6,9 @@
     margin-bottom: 2rem;
     
 }
+[data-imagem]{
+    width: 200%;
+}
 
 .maisdetalhe__informacao{
     width: 50%;
@@ -57,6 +60,9 @@
     .produto--maisdetalhe picture{
         
         width: 40%;
+    }
+    [data-imagem]{
+        width: 100%;
     }
 }
 
