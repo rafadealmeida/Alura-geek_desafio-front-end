@@ -55,6 +55,10 @@
     display:none;
 }
 
+.produto img{
+    max-width:155px
+}
+
 
 @media screen and (max-width:768px){
     .produtos__grade--todososprodutos:last-child,.produtos__grade--todososprodutos:nth-last-child(1){
