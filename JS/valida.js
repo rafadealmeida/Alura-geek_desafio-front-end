@@ -8,16 +8,17 @@ export function valida (input) {
     }
 
     if(input.validity.valid){
-        input.parentElement.classList.remove('usuariologin--erro')
+        input.classList.remove('usuariologin--erro')
         input.parentElement.querySelector(".input__mensagem--erro").innerHTML = " "
     }
     else{
-        input.parentElement.classList.add('usuariologin--erro')
+        input.classList.add('usuariologin--erro')
         input.parentElement.querySelector('.input__mensagem--erro').innerHTML = mostraMensagemErro(tipoDeInput,input)
+        console.log('erro')
     }
 
 
-   if(checaEmail(input) && checaSenha(input)){
+   if(emailValido && senhaValido){
        console.log("login efetuado")
    }
    else{
@@ -31,31 +32,33 @@ const validadores = {
     senha:input=> checaSenha(input)
 }
 
-function checaEmail (input) {
+export function checaEmail (input) {
    
     let mensagem = ''
-   
-    if(input.value ==="AluraGeek"){
-        return true
+    let emailValido = false
+    if(input.value ==="AluraGeek@email.com"){
+        emailValido= true
     }else{
         mensagem='O login está incorreto! Tente novamente.'
-        // return false
+        
     }
 
     input.setCustomValidity(mensagem)
+    return emailValido
 }
 
-function checaSenha(input) {
+export function checaSenha(input) {
     let mensagem = ''
-   
-    if(input.value ==="Alura+D1000cursos"){
-        return true
+    let senhaValido = false
+    if(input.value ==="Alura"){
+        senhaValido = false
     }else{
         mensagem='O senha está incorreto! Tente novamente.'
         // return false
     }
 
     input.setCustomValidity(mensagem)
+    return senhaValido
 }
 
 const tipoDeErro = [
@@ -76,7 +79,8 @@ const mensagemDeErro = {
     },
     senha:{
         valueMissing:'O campo senha não pode está vazio',
-        patternMismatch:'Este campo deve conter de 6 a 12 caracteres e pelo menos 1 letra Maiúscula e minuscula ,1 número e não pode conter símbolos'
+        customError:'A senha está incorreto! Tente novamente.'
+    
     }
 }
 
