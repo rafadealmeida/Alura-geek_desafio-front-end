@@ -171,5 +171,14 @@
         }
         
         
+    ],
+
+    "usuarios":[
+        {
+            "id":1,
+            "email":"AluraGeek@email.com",
+            "senha":"Alura"
+            
+        }
     ]
 }
