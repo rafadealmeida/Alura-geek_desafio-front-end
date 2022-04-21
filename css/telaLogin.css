@@ -46,10 +46,10 @@
     border-radius: 4px;
 }
 
-
+/* 
 .input__mensagem--erro{
     display: none;
-}
+} */
 
 @media screen and (max-width: 768px){
     .usuariologin{
