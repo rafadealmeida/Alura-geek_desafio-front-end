@@ -9,6 +9,11 @@
  
 }
 
+.usuariologin--erro{
+    border: 5px solid red;
+    border-radius: 4px;
+}
+
 .usuariologin__botaoentrar{
     background-color: var(--corAzul);
     padding: 2rem;
@@ -42,7 +47,9 @@
 }
 
 
-
+.input__container--erro{
+    display: none;
+}
 
 @media screen and (max-width: 768px){
     .usuariologin{
