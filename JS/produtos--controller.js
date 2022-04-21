@@ -55,7 +55,7 @@ const render = async () =>{
                       
                 if("Star Wars" === elemento.categoria){
                     
-                        sessaoStarWars.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
+                sessaoStarWars.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
                         
                 
                 } 
