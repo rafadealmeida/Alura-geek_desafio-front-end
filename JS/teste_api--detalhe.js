@@ -44,7 +44,7 @@ const renderProduto = async () =>{
        const produtosRelacionado = await produtosService.listaProdutos()
         
        produtosRelacionado.forEach(elemento=>{
-        console.log(produtosSemelhante.childNodes)
+       
             
         if(produtosSemelhante.children.length<6 && dadosProduto.id !== elemento.id && dadosProduto.categoria == elemento.categoria){
             
