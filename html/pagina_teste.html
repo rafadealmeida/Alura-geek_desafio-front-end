@@ -148,10 +148,11 @@
 
                 <div class="contadoNomeBox">
                     <label for="nome" class="labelNome">Nome</label>
-                    <input type="text" name="nome" id="contato__nome">
+                    <input type="text" name="nome" id="contato__nome" required>
                 </div>
 
-                <textarea name="mensagem" id="contato__mensagem" cols="60" rows="5" placeholder="Escreva sua mensagem"></textarea>
+                <textarea name="mensagem" id="contato__mensagem" cols="60" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+                <span class="contato__mensagem--erro"></span>
                 
                 <input type="submit" value="Enviar mensagem" id="contato__botaoenviar">
             </form>
@@ -164,6 +165,8 @@
     <script src="../JS/pequisa.js"></script>
     <script type="module" src="../JS/teste_api.js"></script>
     <script type="module" src="../JS/produtos--controller.js"></script>
+    <script src="../JS/formularioContato.js"></script>
+    sc
     
 </body>
 </html>
