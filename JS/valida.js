@@ -37,7 +37,7 @@ export function checaEmail (input) {
     let mensagem = ''
     let emailValido = false
     if(input.value ==="AluraGeek@email.com"){
-        emailValido= true
+        emailValido = true
     }else{
         mensagem='O login está incorreto! Tente novamente.'
         
