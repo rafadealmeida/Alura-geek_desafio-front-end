@@ -58,6 +58,16 @@
     width: 102%;
 }
 
+.contato__mensagem--erro{
+    color: red;
+    margin-top:.4rem
+}
+
+.contato--erro{
+    color: red;
+  
+}
+
 footer{
     background-color: var(--corBackgroundFooter);
 }
