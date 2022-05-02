@@ -64,10 +64,16 @@ function fecharModal(){
 const escutador = async () => {
     await renderTodosProdutos()
 
-    botaoEditar.addEventListener('click',abrirModal);
+    try{
+        
+        botaoEditar.addEventListener('click',abrirModal);
+        
+        sairModal.addEventListener('click',fecharModal);
+    }
 
-    sairModal.addEventListener('click',fecharModal);
-
+    catch(erro){
+        console.log(erro);
+    }
 }
 escutador()
 
