@@ -18,7 +18,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: .8rem;
 
+}
+.produto img{
+    max-width:155px
 }
 
 
