@@ -22,7 +22,15 @@
 
 }
 .produto img{
-    max-width:155px
+    max-width:155px;
+    position: relative;
+}
+
+.funcoes{
+    position: absolute;
+    top: 33%;
+    left: 20%;
+    z-index: 3;
 }
 
 
