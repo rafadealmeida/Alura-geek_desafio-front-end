@@ -4,6 +4,9 @@ import { produtosService } from "./teste_api.js";
 
 const gradeProdutos = document.querySelector('.produtos__grade--todososprodutos')
 
+const botaoEditar = document.querySelector('.produto__funcao--editar')
+const sairModal = document.querySelector('.editar__produto--sair')
+
 
 const criarProdutoGrade = (nome,img,preco,id) =>{
     const itemProduto = document.createElement("li")
@@ -38,14 +41,8 @@ const renderTodosProdutos = async () =>{
                if(gradeProdutos.children.length <= 17){
 
                    gradeProdutos.appendChild(criarProdutoGrade(elemento.nome,elemento.img,elemento.preco,elemento.id))
-               }
-                    
-                        
-                
-               
-                                    
+               }                        
         })
-
     }
     catch(erro){
         console.log(erro)
@@ -53,4 +50,26 @@ const renderTodosProdutos = async () =>{
 }
 
 renderTodosProdutos();
+
+function abrirModal(){
+    let element = document.querySelector('.editar__produto');
+    element.classList.add('.janela__modal--mostra')
+}
+
+function fecharModal(){
+    let element = document.querySelector('.editar__produto');
+    element.classList.remove('.janela__modal--mostra')
+}
+
+const escutador = async () => {
+    await renderTodosProdutos()
+
+    botaoEditar.addEventListener('click',abrirModal);
+
+    sairModal.addEventListener('click',fecharModal);
+
+}
+escutador()
+
+
 

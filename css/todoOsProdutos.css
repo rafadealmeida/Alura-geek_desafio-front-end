@@ -2,6 +2,45 @@
     display: none;
 }
 
+.editar__produto{
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity:0;
+    visibility: hidden; 
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out,opacity 0.25s ease-in-out;
+}
+
+.editar__produto--conteudo{
+    background-color:white;
+    padding: 16px 24px;
+    width: 70%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.499);
+}
+.editar__produto--sair{
+    background-color: rgba(178, 178, 178, 0.4);
+    cursor: pointer;
+    float: right;
+    line-height:24px;
+    text-align: center;
+    width: 5%;
+    z-index:40;
+}
+
+.janela__modal--mostra{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
 
 .produto{
     margin-bottom: 2rem;
