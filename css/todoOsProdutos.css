@@ -26,12 +26,37 @@
     position: relative;
 }
 
-.funcoes{
-    position: absolute;
-    top: 33%;
-    left: 20%;
-    z-index: 3;
+.produto__funcao{
+    width: 100%;
 }
+.produto__funcao--editar, .produto__funcao--deletar{
+    width: 48%;
+    height: 25px;
+    cursor: pointer;
+}
+
+.produto__funcao--editar{
+    border-color: var(--corAzul);
+    border-radius: 4px;
+    background-image: url(../img/edit_black_24dp\ 1.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 1.2rem;
+    padding: .2rem;
+}
+
+.produto__funcao--deletar{
+    border-color: red;
+    border-radius: 4px;
+    background-image: url(../img/Vector_1.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: .6rem;
+    padding: .2rem;
+}
+
+
+
 
 
 @media screen and (max-width:768px) {
