@@ -11,8 +11,9 @@ const criarProdutoGrade = (nome,img,preco,id) =>{
         
         <a href="maisdetalhes_teste.html?id=${id}" class="produto__link"><img src="${img}" alt="">
         <h3 class="produto__nome">${nome}</h3>
+        <p class="produto__preco">${preco}</p>
         <p class="produto__codigo">#11111111</p>
-        <a href="maisdetalhes_teste.html?id=${id}" class="produto__link">Ver produto</a>
+        
         
     `
     itemProduto.classList.add('produto');
