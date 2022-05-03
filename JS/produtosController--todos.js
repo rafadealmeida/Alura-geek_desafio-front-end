@@ -4,8 +4,9 @@ import { produtosService } from "./teste_api.js";
 
 const gradeProdutos = document.querySelector('.produtos__grade--todososprodutos')
 
-const botaoEditar = document.querySelector('.produto__funcao--editar')
-const sairModal = document.querySelector('.editar__produto--sair')
+const botaoTeste = document.querySelector('.btn')
+// const botaoEditar = document.querySelector('.produto__funcao--editar')
+// const sairModal = document.querySelector('.editar__produto--sair')
 
 
 const criarProdutoGrade = (nome,img,preco,id) =>{
@@ -18,9 +19,9 @@ const criarProdutoGrade = (nome,img,preco,id) =>{
         <p class="produto__preco">${preco}</p>
         <p class="produto__codigo">#11111111</p>
         <div class="produto__funcao">
-                 <button class="produto__funcao--editar"></button>
-                 <button class="produto__funcao--deletar"></button>
-             </div>
+            <button class="produto__funcao--editar"></button>
+            <button class="produto__funcao--deletar"></button>
+        </div>
         
         
     `
@@ -64,9 +65,13 @@ function fecharModal(){
 const escutador = async () => {
     await renderTodosProdutos()
 
+    const botaoEditar = document.querySelector('.produto__funcao--editar')
+
+    const sairModal = document.querySelector('.editar__produto--sair')
+
     try{
         
-        botaoEditar.addEventListener('click',abrirModal);
+        botaoTeste.addEventListener('click',abrirModal);
         
         sairModal.addEventListener('click',fecharModal);
     }
