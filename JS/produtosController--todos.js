@@ -4,7 +4,7 @@ import { produtosService } from "./teste_api.js";
 
 const gradeProdutos = document.querySelector('.produtos__grade--todososprodutos')
 
-const botaoTeste = document.querySelector('.btn')
+
 // const botaoEditar = document.querySelector('.produto__funcao--editar')
 // const sairModal = document.querySelector('.editar__produto--sair')
 
@@ -55,25 +55,35 @@ renderTodosProdutos();
 function abrirModal(){
     let element = document.querySelector('.editar__produto');
     element.classList.add('.janela__modal--mostra')
+    console.log('abriu')
 }
 
 function fecharModal(){
     let element = document.querySelector('.editar__produto');
     element.classList.remove('.janela__modal--mostra')
+    console.log('fechar')
 }
 
 const escutador = async () => {
     await renderTodosProdutos()
 
-    const botaoEditar = document.querySelector('.produto__funcao--editar')
+    const botaosEditar = document.querySelectorAll('.produto__funcao--editar')
 
     const sairModal = document.querySelector('.editar__produto--sair')
 
     try{
+        botaosEditar.forEach((botaoEditar)=>{
+            botaoEditar.addEventListener('click',(evento)=>{
+                evento.preventDefault()
+                abrirModal()
+
+        })
+        });
         
-        botaoTeste.addEventListener('click',abrirModal);
-        
-        sairModal.addEventListener('click',fecharModal);
+        sairModal.addEventListener('click',(evento)=>{
+            evento.preventDefault()
+            fecharModal()
+        });
     }
 
     catch(erro){
