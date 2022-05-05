@@ -18,6 +18,7 @@
 
              <!-- estilização exclusiva  -->
     <link rel="stylesheet" href="../css/todoOsProdutos.css">
+    <link rel="stylesheet" href="../css/adicionarProduto.css">
 
     
 
@@ -85,11 +86,26 @@
                 
             </div>
             
-            <button class="btn">Teste</button>
             <div class="editar__produto">
                 <div class="editar__produto--conteudo">
                     <span class="editar__produto--sair">&times;</span>
-                    <h1>Edição de produto</h1>
+                    
+                    
+                    <h1 class="titulo__edicao">Edição de produto</h1>
+                    <form action="" class="novoproduto__informacoes" id="edicao__produto--modal">
+
+                        <img src="../img/Produtos-StarWars/caneca__starwars.jpg" alt="" class="img-edição--produto">
+                        
+                        <label for="nomeProduto">Nome do Produto</label>
+                        <input type="text" name="nomeProduto" id="novoproduto__nome" placeholder="Nome do produto">
+                        
+                        <label for="nomeProduto">Preço do Produto</label>
+                        <input type="text" name="precoProduto" id="novoproduto__preco" placeholder="Preço do produto">
+                        
+                        <label for="nomeProduto">Descrição do Produto</label>
+                        <textarea name="descricaoProduto" id="novoproduto__descricao" cols="30" rows="2" placeholder="Descrição do produto"></textarea>
+                        <button type="submit" class="novoproduto__adicionar--botao">Editar produto</button>
+                    </form>
                 </div>
             </div>
                
