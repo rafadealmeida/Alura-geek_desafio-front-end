@@ -14,6 +14,7 @@
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     transform: scale(1.1);
+    z-index: 200;
     opacity:0;
     visibility: hidden; 
     transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out,opacity 0.25s ease-in-out;
@@ -22,24 +23,47 @@
 .editar__produto--conteudo{
     background-color:white;
     padding: 16px 24px;
-    width: 70%;
+    width: 50%;
+    height: 90vh;
     border-radius: 8px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.499);
 }
+
+#edicao__produto--modal{
+margin: .7rem auto;
+}
+
+
 .editar__produto--sair{
     background-color: rgba(178, 178, 178, 0.4);
+    border-radius:4px;
     cursor: pointer;
     float: right;
     line-height:24px;
     text-align: center;
     width: 5%;
     z-index:40;
+    margin-top: -.45rem;
+}
+
+.editar__produto--sair:hover{
+    background-color: darkgray;
+}
+
+.img-edição--produto{
+    border-radius:4px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.321);
+    margin: 0 auto;
+    margin-bottom:0.8rem;
+    max-height:220px;
+    max-width: 306px;
 }
 
 .janela__modal--mostra{
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
+    
 }
 
 .produto{
@@ -95,7 +119,9 @@
 }
 
 
-
+.titulo__edicao{
+   margin-top:-.8rem;
+}
 
 
 @media screen and (max-width:768px) {
@@ -111,7 +137,12 @@
         display: block;
     }
 
-    
+    .editar__produto{
+        width: 84%;
+    }
+    .editar__produto--conteudo{
+        height:85vh;
+    }
 
 
 }
