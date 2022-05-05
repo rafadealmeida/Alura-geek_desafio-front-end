@@ -3,10 +3,10 @@ import { produtosService } from "./teste_api.js";
 
 
 const gradeProdutos = document.querySelector('.produtos__grade--todososprodutos')
+const sairModal = document.querySelector('.editar__produto--sair')
+const janelaModal = document.querySelector('.editar__produto')
 
 
-// const botaoEditar = document.querySelector('.produto__funcao--editar')
-// const sairModal = document.querySelector('.editar__produto--sair')
 
 
 const criarProdutoGrade = (nome,img,preco,id) =>{
@@ -54,23 +54,37 @@ renderTodosProdutos();
 
 function abrirModal(){
     let element = document.querySelector('.editar__produto');
-    element.classList.add('.janela__modal--mostra')
-    console.log('abriu')
+    
+    if (element.style.visibility == 'hidden'|| element.style.visibility == ''){  
+        element.style.visibility = 'visible'
+        element.style.opacity = '1'
+        element.style.transition = 'visibility 0.25s ease-in-out, transform 0.25s ease-in-out,opacity 0.25s ease-in-out;'
+        fecharModal()
+        
+    }else{
+        element.style.visibility = 'hidden'
+        element.style.opacity = '0'
+        element.style.transform='scale(1.0)'
+    }
 }
 
 function fecharModal(){
     let element = document.querySelector('.editar__produto');
-    element.classList.remove('.janela__modal--mostra')
-    console.log('fechar')
+    element.addEventListener('click', (evento)=>{
+       
+
+        if(evento.target == sairModal || evento.target == janelaModal){
+            element.style.visibility = 'hidden'
+            element.style.opacity = '0'  
+        }
+    })
 }
 
-const escutador = async () => {
+const abrirJanelaModal = async () => {
     await renderTodosProdutos()
 
     const botaosEditar = document.querySelectorAll('.produto__funcao--editar')
-
-    const sairModal = document.querySelector('.editar__produto--sair')
-
+ 
     try{
         botaosEditar.forEach((botaoEditar)=>{
             botaoEditar.addEventListener('click',(evento)=>{
@@ -80,17 +94,15 @@ const escutador = async () => {
         })
         });
         
-        sairModal.addEventListener('click',(evento)=>{
-            evento.preventDefault()
-            fecharModal()
-        });
+       
     }
 
     catch(erro){
         console.log(erro);
     }
 }
-escutador()
+
+abrirJanelaModal()
 
 
 
