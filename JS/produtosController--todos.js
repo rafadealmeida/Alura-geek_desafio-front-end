@@ -1,10 +1,13 @@
 import { produtosService } from "./teste_api.js";
 // import { criarItemProduto } from "./produtos--controller.js"
+import { pegaInput } from "./produtosController--put.js";
 
 
 const gradeProdutos = document.querySelector('.produtos__grade--todososprodutos')
 const sairModal = document.querySelector('.editar__produto--sair')
 const janelaModal = document.querySelector('.editar__produto')
+
+
 
 
 
@@ -19,7 +22,7 @@ const criarProdutoGrade = (nome,img,preco,id) =>{
         <p class="produto__preco">${preco}</p>
         <p class="produto__codigo">#11111111</p>
         <div class="produto__funcao">
-            <button class="produto__funcao--editar"></button>
+            <button class="produto__funcao--editar" id="${id}"></button>
             <button class="produto__funcao--deletar"></button>
         </div>
         
@@ -52,7 +55,7 @@ const renderTodosProdutos = async () =>{
 
 renderTodosProdutos();
 
-function abrirModal(){
+ function abrirModal(){
     let element = document.querySelector('.editar__produto');
     
     if (element.style.visibility == 'hidden'|| element.style.visibility == ''){  
@@ -80,7 +83,7 @@ function fecharModal(){
     })
 }
 
-const abrirJanelaModal = async () => {
+export const abrirJanelaModal =  async () => {
     await renderTodosProdutos()
 
     const botaosEditar = document.querySelectorAll('.produto__funcao--editar')
@@ -90,6 +93,10 @@ const abrirJanelaModal = async () => {
             botaoEditar.addEventListener('click',(evento)=>{
                 evento.preventDefault()
                 abrirModal()
+                let id = botaoEditar.id
+                pegaInput(id)
+                
+                
 
         })
         });
