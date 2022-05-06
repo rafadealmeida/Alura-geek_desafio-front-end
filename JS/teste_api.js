@@ -14,7 +14,30 @@ const detalhaProdutos = (id) => {
     
 }
 
+const atualizaProduto = (nome,preco,descricao,id) =>{
+    return fetch (`http://localhost:3000/produtos/${id}`, {
+        method : 'PUT',
+        headers : {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            nome:nome ,
+            preco:preco,
+            detalhe:descricao
+        })
+
+      })
+    .then(resposta =>{
+        if(resposta.ok) {
+            return resposta.json();
+        }
+        throw new Error('Não foi possível atualizar o produto')
+        
+    })
+}
+
 export  const produtosService ={
     listaProdutos,
-    detalhaProdutos
+    detalhaProdutos,
+    atualizaProduto
 }
