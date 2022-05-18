@@ -1,7 +1,7 @@
 import { produtosService } from "./teste_api.js"
-import { abrirJanelaModal } from "./produtosController--todos.js"
 
-const botao = document.querySelector('.novoproduto__adicionar--botao')
+
+
 
 const nomeInput =document.querySelector( '[data-tipo ="nome__produto"]')
 const precoInput =document.querySelector( '[data-tipo ="preco__produto"]')
@@ -21,27 +21,27 @@ export const pegaInput = async (id) =>{
   
 }
 
-const eviarFormulario = ()=> {
-    await abrirJanelaModal()
+export const enviarFormulario = async (id) => {
 
-    botao.addEventListener('submit',(evento) => {
+    const btn = document.querySelector('.novoproduto__adicionar--botao') 
+
+    btn.addEventListener('click',(evento) => {
         evento.preventDefault()
-        produtosService.atualizaProduto(nomeInput.value,precoInput.value,descricaoInput.value).then(() => {
+
+
+        produtosService.atualizaProduto(nomeInput.value,precoInput.value,descricaoInput.value,id).then(() => {
             alert("Produto atualizado com sucesso!")
         })
         console.log("clicou")
+
+        evento.preventDefault()
+
     })
 
 }
-eviarFormulario()
 
-// botao.addEventListener('submit',(evento) => {
-//     evento.preventDefault()
-//     produtosService.atualizaProduto(nomeInput.value,precoInput.value,descricaoInput.value).then(() => {
-//         alert("Produto atualizado com sucesso!")
-//     })
-//     console.log("clicou")
-// })
+
+
 
 
 
