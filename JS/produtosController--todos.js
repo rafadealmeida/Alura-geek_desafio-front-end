@@ -2,6 +2,8 @@ import { produtosService } from "./teste_api.js";
 // import { criarItemProduto } from "./produtos--controller.js"
 import { pegaInput } from "./produtosController--put.js";
 
+import { enviarFormulario } from "./produtosController--put.js";
+
 
 const gradeProdutos = document.querySelector('.produtos__grade--todososprodutos')
 const sairModal = document.querySelector('.editar__produto--sair')
@@ -55,7 +57,7 @@ const renderTodosProdutos = async () =>{
 
 renderTodosProdutos();
 
- function abrirModal(){
+function abrirModal(){
     let element = document.querySelector('.editar__produto');
     
     if (element.style.visibility == 'hidden'|| element.style.visibility == ''){  
@@ -95,6 +97,7 @@ export const abrirJanelaModal =  async () => {
                 abrirModal()
                 let id = botaoEditar.id
                 pegaInput(id)
+                enviarFormulario(id)
                 
                 
 
