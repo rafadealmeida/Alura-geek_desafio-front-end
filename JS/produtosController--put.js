@@ -29,7 +29,7 @@ export const enviarFormulario = async (id) => {
         evento.preventDefault()
 
 
-        produtosService.atualizaProduto(nomeInput.value,precoInput.value,descricaoInput.value,id).then(() => {
+        produtosService.atualizaProduto(nomeInput.value,precoInput.value,descricaoInput.value,imagemProduto.srcset,id).then(() => {
             alert("Produto atualizado com sucesso!")
         })
         console.log("clicou")
