@@ -23,7 +23,7 @@ const atualizaProduto = (nome,preco,descricao,id) =>{
         body: JSON.stringify({
             nome:nome ,
             preco:preco,
-            detalhe:descricao
+            detalhe:descricao,
         })
 
       })
