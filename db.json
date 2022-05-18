@@ -26,9 +26,9 @@
     },
     {
       "nome": "Yoda",
-      "preco": "185,00",
-      "img": "../img/Produtos-StarWars/unsplash_KeGToDVN0l4.png",
+      "preco": "180,00",
       "detalhe": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
+      "img": "../img/Produtos-StarWars/unsplash_KeGToDVN0l4.png",
       "id": 4
     },
     {
