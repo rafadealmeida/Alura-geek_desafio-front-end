@@ -33,7 +33,7 @@ const criaProduto = (nome,preco,descricao,img,id) =>{
         if(resposta.ok) {
             return resposta.json();
         }
-        throw new Error('Não foi possível atualizar o produto')
+        throw new Error('Não foi possível criar o produto')
         
     })
 }
