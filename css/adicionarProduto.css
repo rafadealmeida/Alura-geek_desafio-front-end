@@ -50,7 +50,7 @@
     
 }
 
-#novoproduto__preco ,#novoproduto__nome, #novoproduto__descricao{
+#novoproduto__preco ,#novoproduto__nome, #novoproduto__descricao, #novoproduto__categoria{
     padding: 1rem .5rem;
     margin: .5rem 0;
     border: 0px;
