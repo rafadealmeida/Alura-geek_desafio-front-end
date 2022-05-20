@@ -1,6 +1,16 @@
 const drop = document.querySelector('.metodo__adicionarfoto')
 const dropParagrafo = document.querySelector('.dropzone__paragrafo')
 
+const button = document.querySelector('.novoproduto__adicionarfoto--botao')
+const input = document.querySelector('.novoproduto__adicionarfoto--input')
+
+const nomeInput = document.querySelector('#novoproduto__nome')
+const precoInput = document.querySelector('#novoproduto__preco')
+const descricao = document.querySelector('#novoproduto__descricao')
+const categoria = document.querySelector('#novoproduto__categoria')
+
+console.log(nomeInput, precoInput, descricao, categoria)
+
 let dragged = null;
 
 let file;
@@ -27,7 +37,6 @@ drop.addEventListener('drop',evento=>{
 })
 
 
-
 const colocaImagem = () =>{
    
     let fileType = file.type;
@@ -36,8 +45,7 @@ const colocaImagem = () =>{
 
        
    if(tipoDeImagem.includes(fileType)){
-       console.log('Isso é uma imagem!')
-
+      
        let fileReader = new FileReader(); //criando um novo objeto leitor de arquivo
 
        fileReader.onload = () => {
@@ -57,3 +65,18 @@ const colocaImagem = () =>{
    }
     
 }
+
+button.onclick = () => {
+    input.click()
+    
+}
+
+input.addEventListener("change", (event) =>{
+
+    
+    file = input.files[0]
+    colocaImagem()
+    
+} )
+
+
