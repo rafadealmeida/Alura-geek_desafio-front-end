@@ -2,9 +2,10 @@
   "produtos": [
     {
       "nome": "Caneca Stromtropper",
-      "preco": "35,00",
+      "preco": "35,90",
       "detalhe": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
       "img": "../img/Produtos-StarWars/unsplash_6FDXGY9J6y4.png",
+      "categoria": "Star Wars",
       "id": 1
     },
     {
@@ -16,11 +17,12 @@
       "categoria": "Star Wars"
     },
     {
+      "id": 3,
       "nome": "Stromtropper",
       "preco": "140,00",
       "detalhe": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
       "img": "../img/Produtos-StarWars/unsplash_4OHkK555s1A.png",
-      "id": 3
+      "categoria": "Star Wars"
     },
     {
       "nome": "Yoda",
