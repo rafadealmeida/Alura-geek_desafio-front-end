@@ -2,7 +2,7 @@
     display: none;
 }
 
-.editar__produto{
+.editar__produto, .deletar__produto{
     position: fixed;
     padding: 0;
     left: 0;
@@ -20,7 +20,7 @@
     transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out,opacity 0.25s ease-in-out;
 }
 
-.editar__produto--conteudo{
+.editar__produto--conteudo, .deletar__produto--conteudo{
     background-color:white;
     padding: 16px 24px;
     width: 50%;
@@ -29,12 +29,12 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.499);
 }
 
-#edicao__produto--modal{
+#edicao__produto--modal,.deletar__produto--modal{
 margin: .7rem auto;
 }
 
 
-.editar__produto--sair{
+.editar__produto--sair,.deletar__produto--sair{
     background-color: rgba(178, 178, 178, 0.4);
     border-radius:4px;
     cursor: pointer;
@@ -46,7 +46,7 @@ margin: .7rem auto;
     margin-top: -.45rem;
 }
 
-.editar__produto--sair:hover{
+.editar__produto--sair:hover,.deletar__produto--sair:hover{
     background-color: darkgray;
 }
 
