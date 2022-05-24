@@ -44,7 +44,7 @@ const renderTodosProdutos = async () =>{
             
         dados.forEach(elemento=>{
                       
-               if(gradeProdutos.children.length <= 17){
+               if(gradeProdutos.children.length < 24){
 
                    gradeProdutos.appendChild(criarProdutoGrade(elemento.nome,elemento.img,elemento.preco,elemento.id))
                }                        
@@ -89,6 +89,7 @@ export const abrirJanelaModal =  async () => {
     await renderTodosProdutos()
 
     const botaosEditar = document.querySelectorAll('.produto__funcao--editar')
+    const botaosDeletar = document.querySelectorAll('.produto__funcao--deletar')
  
     try{
         botaosEditar.forEach((botaoEditar)=>{
@@ -97,14 +98,17 @@ export const abrirJanelaModal =  async () => {
                 abrirModal()
                 let id = botaoEditar.id
                 pegaInput(id)
-                enviarFormulario(id)
-                
-                
-
+                enviarFormulario(id)  
         })
         });
+
+        botaosDeletar.forEach((botaoDeletar)=>{
+            botaoDeletar.addEventListener('click',(evento)=>{
+            evento.preventDefault()
+            console.log(evento.target.className)
+        })
         
-       
+    })
     }
 
     catch(erro){
