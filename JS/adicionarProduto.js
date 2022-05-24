@@ -1,3 +1,5 @@
+import { produtosService } from "./teste_api.js"
+
 const drop = document.querySelector('.metodo__adicionarfoto')
 const dropParagrafo = document.querySelector('.dropzone__paragrafo')
 
@@ -9,7 +11,9 @@ const precoInput = document.querySelector('#novoproduto__preco')
 const descricao = document.querySelector('#novoproduto__descricao')
 const categoria = document.querySelector('#novoproduto__categoria')
 
-console.log(nomeInput, precoInput, descricao, categoria)
+const botaoAdicionar = document.querySelector('.novoproduto__adicionar--botao')
+
+
 
 let dragged = null;
 
@@ -51,7 +55,7 @@ const colocaImagem = () =>{
        fileReader.onload = () => {
            let fileURL = fileReader.result;
 
-           let imagemTag = `<img src="${fileURL}" alt="">`
+           let imagemTag = `<img src="${fileURL}" alt="" class = "adicionar__imagem--produto">`
 
            drop.style.padding = "0"
            drop.innerHTML = imagemTag;
@@ -63,7 +67,7 @@ const colocaImagem = () =>{
        dropParagrafo.innerHTML =" Arraste para adicionar uma <br> imagem do produto"
        drop.style.padddig = "2rem 0"
    }
-    
+   
 }
 
 button.onclick = () => {
@@ -80,3 +84,20 @@ input.addEventListener("change", (event) =>{
 } )
 
 
+
+botaoAdicionar.addEventListener("click", (event) =>{
+    event.preventDefault()
+
+    const imagemDoProduto = document.querySelector(".adicionar__imagem--produto")
+
+    const fileUrl = imagemDoProduto.src
+
+    if(imagemDoProduto){
+        
+        produtosService.criaProduto(nomeInput.value,precoInput.value,descricao.value,fileUrl,categoria.value)
+
+    }else{
+        alert("Todos as informações deve ser preenchidas")
+    }
+
+})
