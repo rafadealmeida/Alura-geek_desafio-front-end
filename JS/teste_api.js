@@ -64,9 +64,15 @@ const atualizaProduto = (nome,preco,descricao,img,id, categoria) =>{
     })
 }
 
+const apagarProduto = (id) => {
+    return fetch (`http://localhost:3000/produtos/${id}`, {
+        method : 'DELETE'})
+}
+
 export  const produtosService ={
     listaProdutos,
     detalhaProdutos,
     atualizaProduto,
-    criaProduto
+    criaProduto,
+    apagarProduto
 }
