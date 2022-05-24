@@ -9,7 +9,7 @@ const gradeProdutos = document.querySelector('.produtos__grade--todososprodutos'
 const sairModal = document.querySelector('.editar__produto--sair')
 const janelaModal = document.querySelector('.editar__produto')
 
-
+let element
 
 
 
@@ -57,8 +57,8 @@ const renderTodosProdutos = async () =>{
 
 renderTodosProdutos();
 
-function abrirModal(){
-    let element = document.querySelector('.editar__produto');
+function abrirModal(botaoApertado){
+    element = document.querySelector(".editar__produto");
     
     if (element.style.visibility == 'hidden'|| element.style.visibility == ''){  
         element.style.visibility = 'visible'
@@ -95,7 +95,7 @@ export const abrirJanelaModal =  async () => {
         botaosEditar.forEach((botaoEditar)=>{
                 botaoEditar.addEventListener('click',(evento)=>{
                 evento.preventDefault()
-                abrirModal()
+                abrirModal(evento.target.className)
                 let id = botaoEditar.id
                 pegaInput(id)
                 enviarFormulario(id)  
