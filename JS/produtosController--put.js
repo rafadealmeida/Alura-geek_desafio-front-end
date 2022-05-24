@@ -43,7 +43,9 @@ export const enviarFormulario = async (id) => {
 }
 
 
+const apagarProduto = async (id) => {
 
+}
 
 
 
