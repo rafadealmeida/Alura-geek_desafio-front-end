@@ -93,7 +93,7 @@ export const abrirJanelaModal =  async () => {
  
     try{
         botaosEditar.forEach((botaoEditar)=>{
-            botaoEditar.addEventListener('click',(evento)=>{
+                botaoEditar.addEventListener('click',(evento)=>{
                 evento.preventDefault()
                 abrirModal()
                 let id = botaoEditar.id
