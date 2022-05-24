@@ -38,7 +38,7 @@ const criaProduto = (nome,preco,descricao,img,id) =>{
     })
 }
 
-const atualizaProduto = (nome,preco,descricao,img,id) =>{
+const atualizaProduto = (nome,preco,descricao,img,id, categoria) =>{
     return fetch (`http://localhost:3000/produtos/${id}`, {
         method : 'PUT',
         headers : {
@@ -48,7 +48,8 @@ const atualizaProduto = (nome,preco,descricao,img,id) =>{
             nome:nome ,
             preco:preco,
             detalhe:descricao,
-            img:img
+            img:img,
+            categoria:categoria
 
         })
 

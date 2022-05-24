@@ -7,6 +7,7 @@ const nomeInput =document.querySelector( '[data-tipo ="nome__produto"]')
 const precoInput =document.querySelector( '[data-tipo ="preco__produto"]')
 const descricaoInput =document.querySelector( '[data-tipo ="descricao__produto"]')
 const imagemProduto = document.querySelector('.img-edição--produto')
+let categoria
 
 export const pegaInput = async (id) =>{
 
@@ -15,6 +16,7 @@ export const pegaInput = async (id) =>{
         precoInput.value = dados.preco
         descricaoInput.value = dados.detalhe
         imagemProduto.srcset = dados.img
+        categoria = dados.categoria
         
     })
     
@@ -29,7 +31,7 @@ export const enviarFormulario = async (id) => {
         evento.preventDefault()
 
 
-        produtosService.atualizaProduto(nomeInput.value,precoInput.value,descricaoInput.value,imagemProduto.srcset,id).then(() => {
+        produtosService.atualizaProduto(nomeInput.value,precoInput.value,descricaoInput.value,imagemProduto.srcset,id,categoria ).then(() => {
             alert("Produto atualizado com sucesso!")
         })
         
