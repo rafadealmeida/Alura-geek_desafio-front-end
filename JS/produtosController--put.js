@@ -43,8 +43,15 @@ export const enviarFormulario = async (id) => {
 }
 
 
-const apagarProduto = async (id) => {
+export const apagarProduto = async (id) => {
+   const botaoDeletar = document.querySelector(".botao__deletar--sim")
+   
 
+   botaoDeletar.onclick = () => {
+       console.log( "apaga!")
+       produtosService.apagarProduto(id)
+
+   }
 }
 
 
