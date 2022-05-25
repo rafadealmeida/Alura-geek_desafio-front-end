@@ -81,12 +81,12 @@
       "categoria": "Console"
     },
     {
-      "id": 11,
       "nome": "Xbox One X",
-      "preco": "2999,00",
-      "img": "../img/Produtos-Consoles/unsplash_Zjn4dT993-g.png",
+      "preco": "3599,00",
       "detalhe": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-      "categoria": "Console"
+      "img": "../img/Produtos-Consoles/unsplash_Zjn4dT993-g.png",
+      "categoria": "Console",
+      "id": 11
     },
     {
       "id": 12,
