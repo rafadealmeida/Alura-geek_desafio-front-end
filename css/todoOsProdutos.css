@@ -1,6 +1,26 @@
 .banner{
     display: none;
 }
+.botaos{
+    display: flex;
+    gap: 0.5rem
+}
+.botao__deletar--sim,.botao__deletar--nao{
+    border-radius: 4px;
+    border-color:gray;
+    color:white;
+    font-weight: bold;
+    padding: 1rem;
+    min-width:70px;
+    width:100%;
+}
+.botao__deletar--nao{
+    background-color: rgb(11, 199, 11);
+    
+}
+.botao__deletar--sim{
+    background-color: red;
+}
 
 .editar__produto, .deletar__produto{
     position: fixed;
@@ -29,10 +49,26 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.499);
 }
 
-#edicao__produto--modal,.deletar__produto--modal{
+.deletar__produto--conteudo{
+    height:20vh
+}
+
+
+
+#edicao__produto--modal{
 margin: .7rem auto;
 }
 
+.deletar__produto--modal{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:1rem;
+    height: 95%;
+    justify-content: center;
+    margin: auto 0;
+}
 
 .editar__produto--sair,.deletar__produto--sair{
     background-color: rgba(178, 178, 178, 0.4);
