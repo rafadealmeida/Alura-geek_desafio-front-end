@@ -4,6 +4,8 @@ import { pegaInput } from "./produtosController--put.js";
 
 import { enviarFormulario } from "./produtosController--put.js";
 
+import { apagarProduto } from "./produtosController--put.js";
+
 
 const gradeProdutos = document.querySelector('.produtos__grade--todososprodutos')
 let sairModal ;
@@ -38,7 +40,7 @@ const criarProdutoGrade = (nome,img,preco,id) =>{
         <p class="produto__codigo">#11111111</p>
         <div class="produto__funcao">
             <button class="produto__funcao--editar" id="${id}"></button>
-            <button class="produto__funcao--deletar"></button>
+            <button class="produto__funcao--deletar" id="${id}"></button>
         </div>
         
         
@@ -123,6 +125,9 @@ export const abrirJanelaModal =  async () => {
             botaoDeletar.addEventListener('click',(evento)=>{
             evento.preventDefault()
             abrirModal(evento.target.className)
+            let id = botaoDeletar.id
+            apagarProduto(id)
+            
         })
         
     })
