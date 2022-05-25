@@ -11,6 +11,7 @@ const gradeProdutos = document.querySelector('.produtos__grade--todososprodutos'
 let sairModal ;
 let janelaModal ;
 let element;
+let botaoNao;
 
 
 const verificaBotao = (botaoApertado) => {
@@ -23,7 +24,7 @@ const verificaBotao = (botaoApertado) => {
         element = document.querySelector(".deletar__produto");
         sairModal = document.querySelector('.deletar__produto--sair')
         janelaModal = document.querySelector('.deletar__produto')
-        
+        botaoNao = document.querySelector('.botao__deletar--nao')
     }
 
    
@@ -96,7 +97,7 @@ function fecharModal(botaoApertado){
     element.addEventListener('click', (evento)=>{
        
 
-        if(evento.target == sairModal || evento.target == janelaModal){
+        if(evento.target == sairModal || evento.target == janelaModal || evento.target == botaoNao){
             element.style.visibility = 'hidden'
             element.style.opacity = '0'  
         }
