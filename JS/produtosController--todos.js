@@ -6,13 +6,26 @@ import { enviarFormulario } from "./produtosController--put.js";
 
 
 const gradeProdutos = document.querySelector('.produtos__grade--todososprodutos')
-const sairModal = document.querySelector('.editar__produto--sair')
-const janelaModal = document.querySelector('.editar__produto')
-
-let element
-
+let sairModal ;
+let janelaModal ;
+let element;
 
 
+const verificaBotao = (botaoApertado) => {
+    if (botaoApertado == "produto__funcao--editar"){
+        element = document.querySelector(".editar__produto");
+        sairModal = document.querySelector('.editar__produto--sair')
+        janelaModal = document.querySelector('.editar__produto')
+        
+    } else if (botaoApertado == "produto__funcao--deletar"){
+        element = document.querySelector(".deletar__produto");
+        sairModal = document.querySelector('.deletar__produto--sair')
+        janelaModal = document.querySelector('.deletar__produto')
+        
+    }
+
+   
+}
 
 const criarProdutoGrade = (nome,img,preco,id) =>{
     const itemProduto = document.createElement("li")
@@ -58,7 +71,8 @@ const renderTodosProdutos = async () =>{
 renderTodosProdutos();
 
 function abrirModal(botaoApertado){
-    element = document.querySelector(".editar__produto");
+
+    verificaBotao(botaoApertado)
     
     if (element.style.visibility == 'hidden'|| element.style.visibility == ''){  
         element.style.visibility = 'visible'
@@ -73,8 +87,10 @@ function abrirModal(botaoApertado){
     }
 }
 
-function fecharModal(){
-    let element = document.querySelector('.editar__produto');
+function fecharModal(botaoApertado){
+
+    verificaBotao(botaoApertado)
+
     element.addEventListener('click', (evento)=>{
        
 
@@ -99,13 +115,14 @@ export const abrirJanelaModal =  async () => {
                 let id = botaoEditar.id
                 pegaInput(id)
                 enviarFormulario(id)  
+                // console.log(evento.target.className)
         })
         });
 
         botaosDeletar.forEach((botaoDeletar)=>{
             botaoDeletar.addEventListener('click',(evento)=>{
             evento.preventDefault()
-            console.log(evento.target.className)
+            abrirModal(evento.target.className)
         })
         
     })
