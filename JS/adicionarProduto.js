@@ -92,10 +92,17 @@ botaoAdicionar.addEventListener("click", (event) =>{
 
     const imagemDoProduto = document.querySelector(".adicionar__imagem--produto")
 
-    const fileUrl = imagemDoProduto.src
-
+    informacoes.forEach(informacao=>{
+        const temLetra = informacao.length>0
+        console.log(temLetra)
+    })
+    
+    
     if(imagemDoProduto){
+        const fileUrl = imagemDoProduto.src
+
         
+
         produtosService.criaProduto(nomeInput.value,precoInput.value,descricao.value,fileUrl,categoria.value)
 
         informacoes.forEach(informacao=>{
@@ -104,7 +111,7 @@ botaoAdicionar.addEventListener("click", (event) =>{
 
         alert("Produto adicionado com sucesso")
 
-        window.location.href = "./html/index.html"
+        window.location.href = "../html/index.html"
 
     }else{
         alert("Todos as informações deve ser preenchidas")
