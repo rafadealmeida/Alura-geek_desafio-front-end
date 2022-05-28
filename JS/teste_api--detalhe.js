@@ -33,6 +33,10 @@ const detalhesProduto = (nome,img,preco,id,descricao) =>{
 
 }
 
+const verificaQuantidadeProduto = () =>{
+
+}
+
 const renderProduto = async () =>{
     
     try {
@@ -50,8 +54,17 @@ const renderProduto = async () =>{
             
             produtosSemelhante.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
                 
+            
         }  
+        setTimeout(()=>{
+            let numeroProdutos = new Boolean (produtosSemelhante.children.length>5)
+            if(numeroProdutos == false && dadosProduto.id !== elemento.id){
+                produtosSemelhante.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
+               }
+        },100)
        })
+
+      
        
     }
     catch(erro){
