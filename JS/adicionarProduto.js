@@ -11,6 +11,8 @@ const precoInput = document.querySelector('#novoproduto__preco')
 const descricao = document.querySelector('#novoproduto__descricao')
 const categoria = document.querySelector('#novoproduto__categoria')
 
+const informacoes = [nomeInput,precoInput,descricao,categoria]
+
 const botaoAdicionar = document.querySelector('.novoproduto__adicionar--botao')
 
 
@@ -96,8 +98,18 @@ botaoAdicionar.addEventListener("click", (event) =>{
         
         produtosService.criaProduto(nomeInput.value,precoInput.value,descricao.value,fileUrl,categoria.value)
 
+        informacoes.forEach(informacao=>{
+            informacao.value = ""
+        })
+
+        alert("Produto adicionado com sucesso")
+
+        window.location.href = "./html/index.html"
+
     }else{
         alert("Todos as informações deve ser preenchidas")
     }
 
 })
+
+
