@@ -145,12 +145,12 @@
       "categoria": "Diversos"
     },
     {
-      "id": 19,
       "nome": "DualSense 5",
-      "preco": "400,00",
-      "img": "../img/Produtos-Consoles/ps5.jpg",
+      "preco": "450,00",
       "detalhe": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-      "categoria": "Console"
+      "img": "../img/Produtos-Consoles/ps5.jpg",
+      "categoria": "Console",
+      "id": 19
     },
     {
       "id": 20,
