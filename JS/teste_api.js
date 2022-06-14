@@ -3,7 +3,7 @@ const listaProdutos = () => {
         if (resposta.ok){
             return resposta.json();
         }
-        throw new Error("Não foi possível listar os produtos")
+        throw new Error ("Não foi possível listar os produtos")
     })
 }
 
@@ -14,7 +14,7 @@ const detalhaProdutos = (id) => {
     
 }
 
-const criaProduto = (nome,preco,descricao,img,categoria) =>{
+const criaProduto = (nome, preco, descricao, img, categoria) => {
     return fetch (`http://localhost:3000/produtos/`, {
         method : 'POST',
         headers : {
@@ -30,16 +30,16 @@ const criaProduto = (nome,preco,descricao,img,categoria) =>{
         })
 
       })
-    .then(resposta =>{
+    .then(resposta => {
         if(resposta.ok) {
             return resposta.json();
         }
-        throw new Error('Não foi possível criar o produto')
+        throw new Error ('Não foi possível criar o produto')
         
     })
 }
 
-const atualizaProduto = (nome,preco,descricao,img,id, categoria) =>{
+const atualizaProduto = (nome, preco, descricao, img, id, categoria) => {
     return fetch (`http://localhost:3000/produtos/${id}`, {
         method : 'PUT',
         headers : {
@@ -55,11 +55,11 @@ const atualizaProduto = (nome,preco,descricao,img,id, categoria) =>{
         })
 
       })
-    .then(resposta =>{
+    .then(resposta => {
         if(resposta.ok) {
             return resposta.json();
         }
-        throw new Error('Não foi possível atualizar o produto')
+        throw new Error ('Não foi possível atualizar o produto')
         
     })
 }

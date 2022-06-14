@@ -52,14 +52,14 @@ const renderProduto = async () =>{
             
         if(produtosSemelhante.children.length<6 && dadosProduto.id !== elemento.id && dadosProduto.categoria == elemento.categoria){
             
-            produtosSemelhante.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
+            produtosSemelhante.appendChild(criarItemProduto(elemento.nome, elemento.img, elemento.preco, elemento.id))
                 
             
         }  
         setTimeout(()=>{
             let numeroProdutos = new Boolean (produtosSemelhante.children.length>5)
             if(numeroProdutos == false && dadosProduto.id !== elemento.id){
-                produtosSemelhante.appendChild(criarItemProduto(elemento.nome,elemento.img,elemento.preco,elemento.id))
+                produtosSemelhante.appendChild(criarItemProduto(elemento.nome, elemento.img, elemento.preco, elemento.id))
                }
         },100)
        })

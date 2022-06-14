@@ -4,7 +4,7 @@
   "description": "do mercado de trabalho, usando de base desgin do Figma,construindo o site do zero, com metas semanais, divididas em 4 semanas.",
   "main": "server.js",
   "scripts": {
-    "start": "npm ./server.js",
+    "start": "json-server --watch db.json",
     "start:front": "browser-sync start --server --files . --directory",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
